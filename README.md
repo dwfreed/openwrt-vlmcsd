@@ -4,9 +4,9 @@ a package for vlmcsd
 
 1. 把下面一行：
 
-   srv-host=_vlmcs._tcp.lan,lede.lan,1688,0,100
+   srv-host=_vlmcs._tcp.lan,openwrt.lan,1688,0,100
    
-   添加到 /etc/dnsmasq.conf .(其中lede.lan根据系统管理中的主机名更改，比如你主机名是lede那么此处填写lede.lan，或者直接改成LAN口IP）
+   添加到 /etc/dnsmasq.conf .(其中lede.lan根据系统管理中的主机名更改，比如你主机名是lede那么此处改为lede.lan，或者直接改成LAN口IP）
 
 2. 重启dnsmasq: 在路由器SSH中运行：
 
