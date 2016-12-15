@@ -1,6 +1,6 @@
 openwrt-vlmcsd
 
-a package for vlmcsd
+A OpenWRT package for vlmcsd
 
 1. 把下面一行：
 
