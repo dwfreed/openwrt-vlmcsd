@@ -18,4 +18,4 @@ A OpenWRT package for vlmcsd
    
    OK, 你的路由器下应该可以自动激活Windows或者Office了 :)
 
-配套luci: [luci-app-vlmcsd](https://github.com/mchome/luci-app-vlmcsd ""), 可自动修改dnsmasq.conf实现自动激活，无需上述配置
+配套luci: [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd ""), 可自动修改dnsmasq.conf实现自动激活，无需上述配置
