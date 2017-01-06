@@ -4,9 +4,11 @@ A OpenWRT package for vlmcsd
 
 
 luci-app-vlmcsd: [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "")
+
 luci-app-vlmscd support KMS auto activation.
 
 If you don't use luci-app-vlmcsd and you want vlmcsd support KMS auto activation, you should modify the settings of dnsmasq manually:
+
 1. Add the following line at the end of "/etc/dnsmasq.conf":
 
    srv-host=_vlmcs._tcp.lan,hostname.lan,1688,0,100
