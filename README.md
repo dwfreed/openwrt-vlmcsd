@@ -2,20 +2,25 @@ openwrt-vlmcsd
 
 A OpenWRT package for vlmcsd
 
-1. 把下面一行：
 
-   srv-host=_vlmcs._tcp.lan,openwrt.lan,1688,0,100
+luci-app-vlmcsd: [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "")
+luci-app-vlmscd support KMS auto activation.
+
+If you don't use luci-app-vlmcsd and you want vlmcsd support KMS auto activation, you should modify the settings of dnsmasq manually:
+1. Add the following line at the end of "/etc/dnsmasq.conf":
+
+   srv-host=_vlmcs._tcp.lan,hostname.lan,1688,0,100
    
-   添加到 /etc/dnsmasq.conf .(其中lede.lan根据系统管理中的主机名更改，比如你主机名是lede那么此处改为lede.lan，或者直接改成LAN口IP）
+   (replace "hostname.lan" with your actual host name, eg: openwrt.lan, or just replace it with your IP of LAN）
 
-2. 重启dnsmasq: 在路由器SSH中运行：
+2. Restart dnsmasq:
 
    /etc/init.d/dnsmasq restart
 
-   然后在win命令行运行：nslookup -type=srv _vlmcs._tcp.lan  如果正确返回了路由器IP则成功，继续下一步。
+   You can check if the dnsmasq setting works with the following cammand in Windows:
+   
+   nslookup -type=srv _vlmcs._tcp.lan
+   
+   The response should be your router's IP.
 
 3. /etc/init.d/vlmcsd enable && /etc/init.d/vlmcsd start && /etc/init.d/dnsmasq restart
-   
-   OK, 你的路由器下应该可以自动激活Windows或者Office了 :)
-
-配套luci: [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd ""), 可自动修改dnsmasq.conf实现自动激活，无需上述配置
