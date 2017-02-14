@@ -10,7 +10,6 @@ git config user.name "cokebar"
 git config user.email "cokebar@cokebar.info"
 mkdir -p ${OSVER}
 pushd $OSVER
-git rm -rf *.ipk
 cp $TRAVIS_BUILD_DIR/*.ipk .
 $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/scripts/ipkg-make-index.sh . > Packages
 gzip -c Packages > Packages.gz
