@@ -1,12 +1,13 @@
 openwrt-vlmcsd
+-----
+#### A OpenWRT package for vlmcsd.
 
-A OpenWRT package for vlmcsd
+You can use [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "") to control it. luci-app-vlmscd support KMS auto-activation.
 
+Travis CI: ![Travis CI Status](https://travis-ci.org/cokebar/openwrt-vlmcsd.svg?branch=master)
 
-luci-app-vlmcsd: [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "")
-
-luci-app-vlmscd support KMS auto activation.
-
+Using without luci-app-vlmcsd
+-----
 If you don't use luci-app-vlmcsd and you want vlmcsd support KMS auto activation, you should modify the settings of dnsmasq manually:
 
 1. Add the following line at the end of "/etc/dnsmasq.conf":
@@ -27,4 +28,8 @@ If you don't use luci-app-vlmcsd and you want vlmcsd support KMS auto activation
 
 3. /etc/init.d/vlmcsd enable && /etc/init.d/vlmcsd start && /etc/init.d/dnsmasq restart
 
-***Your can find pre-compiled ipk on release page: https://github.com/cokebar/openwrt-vlmcsd/releases***
+Pre-compiled Download
+-----
+Your can find pre-compiled ipk:
+- in this branch: https://github.com/cokebar/openwrt-vlmcsd/tree/gh-pages
+- on release page: https://github.com/cokebar/openwrt-vlmcsd/releases
