@@ -65,6 +65,8 @@ after_success: "$TRAVIS_BUILD_DIR/deploy.sh"
 before_deploy: git fetch --tags
 deploy:
   provider: releases
+  api_key:
+    secure: "mFIoatnORrXkwNmNa9bsaWurutMhwAtDB0BS1PGQIVIpBJpnaqcYgwE4kxQ9GCbvjm3u308gUKr+iWiO9LDhUn+Gu9uTZvf79g17/nt85EGxqL5Xoyby2IXh/j4JSQnLiqIoRvutayQ+a0oTD/AUv3B/WhclvJpNplkkE3d6ryHXe7SDsuz1HDiO7vLlHQYTo6c+4eIfPxLjkodjcwiZnzAgQ+vzjn6NLVAKextfLslGDhyvxdtZeTSHgpGOv9pKT6OdbCKslDqy198yYIGifUydlvOKdc6WRBgITypXBntZ4FK1Z0eThqhqXPUVGaIs2UZ2+wyAXczKRrlOtXtr6vLyGGqcyhAy32ly32HJ3mVZAEMqeti4+ZsVWq4QhFTDxQt1ar5qdmUEVScPxw4Dg+ByQmkGo+QWd9BYh9appa1540vyLfDkc28wAOo8fsvhXVaNp7pKCCeD8z5Tfl2qeMasR5Vz2s+EtL9wu9V+jQzdFqese7G1NTb+3lVgk/ZqW9Q+pnKwYohykFnfPtK+vlQCi1JWgC5elIFMdmNEfflCDeqayTdCrtLJzFXZFdbaxJ6INqTpiPXK5DpRum28XiUmo9nFXPqtoDUu9vcmd92AZZfApSgmMk+Efis3y6288qpFsKk/zBO7DVpsGMiEIKrjgZbgL+nOXwV4Q6ynhnc="
   skip_cleanup: true
   file_glob: true
   file: "$TRAVIS_BUILD_DIR/*.ipk"
