@@ -4,7 +4,7 @@ openwrt-vlmcsd
 
 You can use [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "") to control it. luci-app-vlmscd support KMS auto-activation.
 
-Travis CI: ![Travis CI Status](https://travis-ci.org/cokebar/openwrt-vlmcsd.svg?branch=master)
+Travis CI: [![Build Status](https://travis-ci.org/cokebar/openwrt-vlmcsd.svg?branch=master)](https://travis-ci.org/cokebar/openwrt-vlmcsd)
 
 Using without luci-app-vlmcsd
 -----
