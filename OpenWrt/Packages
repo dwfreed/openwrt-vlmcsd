@@ -1,0 +1,240 @@
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: ar71xx
+Installed-Size: 49345
+Filename: vlmcsd_svn1107-1_ar71xx.ipk
+Size: 49519
+MD5Sum: 749b8bbf47d1e08d93b1a0ff8a893e45
+SHA256sum: 36f8aed23b67bac7946440698cc2e88ba713ea23aa6c94e7112f82538480e84d
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: bcm53xx
+Installed-Size: 51158
+Filename: vlmcsd_svn1107-1_bcm53xx.ipk
+Size: 51635
+MD5Sum: 5225b0222343a5f55568c37b1f8a450b
+SHA256sum: bc5585376fb91183f8a45eec40374e7ef92c4240cf427e8d665a6ca1fee05d76
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: brcm47xx
+Installed-Size: 54817
+Filename: vlmcsd_svn1107-1_brcm47xx.ipk
+Size: 54796
+MD5Sum: 0b10e005d21bc3ae3ad5223139184a21
+SHA256sum: 291ff240b3513357844c2d831a2ada7027597841acb8ced4c9e3cf44a706d05b
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: mvebu
+Installed-Size: 51158
+Filename: vlmcsd_svn1107-1_mvebu.ipk
+Size: 51148
+MD5Sum: 2ab8b7d9b13231c8d769c467cfdc8194
+SHA256sum: d7ab7e9dd422476528ae7902027b6cb3ffb04cbfbe11a0d92635b94add8750d3
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: ramips_24kec
+Installed-Size: 54066
+Filename: vlmcsd_svn1107-1_ramips_24kec.ipk
+Size: 54505
+MD5Sum: a9df15cfebef0c97a3cf0546d80d6a68
+SHA256sum: 2d8fd3365d9bf4ea0cfcd669d125290e1554767d47364f19f7dd88f94b233940
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: x86_64
+Installed-Size: 51434
+Filename: vlmcsd_svn1107-1_x86_64.ipk
+Size: 51489
+MD5Sum: 83304ad42f6f29dca30fe19db8a149bd
+SHA256sum: 2dbe5116ebe9a300a112f9c1e7f519f7416a8c781b3b88862af879e83fe7b9a0
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: x86
+Installed-Size: 49510
+Filename: vlmcsd_svn1107-1_x86.ipk
+Size: 49845
+MD5Sum: 9378e283297cfd94bc1e10908ff36247
+SHA256sum: f71f5c61814bca85b5b20b3730bbe4db62307ac584b27dbf41d5f4bb9b6029ba
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: ar71xx
+Installed-Size: 49598
+Filename: vlmcsd_svn1108-1_ar71xx.ipk
+Size: 50029
+MD5Sum: 1506590c8e3dca9eb6acf774636ddc86
+SHA256sum: 47eed6665f56207aaa2d636359f1391c3a410a8145c6d18e1cc32723adefbabc
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: bcm53xx
+Installed-Size: 51425
+Filename: vlmcsd_svn1108-1_bcm53xx.ipk
+Size: 51874
+MD5Sum: 60057a35789a688f00ac921f7f9e8e7b
+SHA256sum: 227bd69edf92ad92b6b1523ce9dd7502213ec53ea0276c5541eb411ad891f660
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: brcm47xx
+Installed-Size: 55054
+Filename: vlmcsd_svn1108-1_brcm47xx.ipk
+Size: 55363
+MD5Sum: 648795295935bdccf588c60929117ce5
+SHA256sum: 0d09174a3cce3c8ecaac19b7701da388a862244e3d8a893b7e94db89a883dff0
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: brcm63xx
+Installed-Size: 55603
+Filename: vlmcsd_svn1108-1_brcm63xx.ipk
+Size: 55753
+MD5Sum: e088011d5b9433be03e7be116c40c959
+SHA256sum: 68b282a9c644444c0725244440a1d1d80c72f911e73da237b5e5ddbc70c82705
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: mvebu
+Installed-Size: 51428
+Filename: vlmcsd_svn1108-1_mvebu.ipk
+Size: 51891
+MD5Sum: 8ac7c06b241f81d1f00d0506c775da87
+SHA256sum: b7bc9d42c478d8cc57a1341677815532184e1f2725e88e474f534321389a0d21
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: ramips_24kec
+Installed-Size: 54277
+Filename: vlmcsd_svn1108-1_ramips_24kec.ipk
+Size: 54887
+MD5Sum: c3a4f1b5e16aa19c1a1c8d630cf2ecbc
+SHA256sum: fda1835af30dac6f0eddfa0d1f4321db60cc95a0ce54c162bba0aeceac8bd8bb
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: x86_64
+Installed-Size: 51651
+Filename: vlmcsd_svn1108-1_x86_64.ipk
+Size: 52061
+MD5Sum: 1a9a57d2432204d6ef7b34d6091dbe83
+SHA256sum: f55ffcbd06daa16ae850565ef754f864599cfe90ee983cc04af46c791af8d547
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1108-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Wind4
+Architecture: x86
+Installed-Size: 49738
+Filename: vlmcsd_svn1108-1_x86.ipk
+Size: 50071
+MD5Sum: 96f63473f62dc556c14e61afdece98ed
+SHA256sum: cc183ce4d5cd9ceed9c44ada2d2caab1cab129fa6aa9209ad779b834492dad2a
+Description:  vlmcsd is a KMS Emulator in C.
+
