@@ -144,8 +144,8 @@ Maintainer: Wind4
 Architecture: i386_pentium4
 Installed-Size: 52068
 Filename: vlmcsd_svn1108-1_i386_pentium4.ipk
-Size: 52559
-SHA256sum: 93a6757f2f350cb14367c0e686e3956e59992f60cdeaa1514e1978feff26a5eb
+Size: 52605
+SHA256sum: 35673c588c7d396bfb500da0b71dcb4c92fd9925f2ddbec8cd42dc4c76c9c0ad
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
