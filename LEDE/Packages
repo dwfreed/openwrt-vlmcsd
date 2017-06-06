@@ -114,8 +114,8 @@ Maintainer: Wind4
 Architecture: arm_cortex-a9
 Installed-Size: 53500
 Filename: vlmcsd_svn1108-1_arm_cortex-a9.ipk
-Size: 54246
-SHA256sum: 206b46947a58f1b5d5d86cfa5a81e43ee52a37f4718efa124449deac6801ed41
+Size: 54211
+SHA256sum: 8a8f60d245d95b70392d9915bee1d7e5c6b7d893190a00509cc0af765fcea443
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
