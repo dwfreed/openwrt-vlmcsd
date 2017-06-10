@@ -1,15 +1,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=vlmcsd
-PKG_VERSION=svn1108
+PKG_VERSION=svn1110
 PKG_RELEASE:=1
 
-PKG_MAINTAINER:=Wind4
+PKG_MAINTAINER:=HotBird64
 PKG_LICENSE:=MIT
 PKG_LICENSE_FILES:=LICENSE
 
 PKG_SOURCE:=$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/Wind4/vlmcsd/archive
+PKG_SOURCE_URL:=https://github.com/cokebar/vlmcsd/archive
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_BUILD_PARALLEL:=1
