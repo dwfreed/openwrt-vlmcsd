@@ -1,6 +1,6 @@
 openwrt-vlmcsd
 -----
-#### A OpenWRT package for vlmcsd.
+#### An OpenWRT package for vlmcsd.
 
 You can use [luci-app-vlmcsd](https://github.com/cokebar/luci-app-vlmcsd "") to control it. luci-app-vlmscd support KMS auto-activation.
 
