@@ -439,11 +439,11 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: HotBird64
 Architecture: ramips_24kec
-Installed-Size: 54770
+Installed-Size: 54771
 Filename: vlmcsd_svn1111-1_ramips_24kec.ipk
-Size: 54862
-MD5Sum: 4d3011e460b952e7071982889bd21f07
-SHA256sum: 39cbc4c8615ce0d7d8307d897ac34dda843fff4ddf8c107fb3806f0e8e4c467c
+Size: 54950
+MD5Sum: e614194e490d5aff5a6b18527faf3ab1
+SHA256sum: b0031572ed2c6647bff01e7df45fe42554586d746eba9258ecb32481b0eb6a18
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
