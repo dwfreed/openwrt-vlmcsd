@@ -388,3 +388,18 @@ Size: 58267
 SHA256sum: dbda6059a0581086d27e46659fd0aa65648a7591067f847d9fc4bd10931d3696
 Description:  vlmcsd is a KMS Emulator in C.
 
+Package: vlmcsd
+Version: svn1111-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: HotBird64
+Architecture: mips_mips32
+Installed-Size: 58318
+Filename: vlmcsd_svn1111-1_mips_mips32.ipk
+Size: 58772
+SHA256sum: 457790428c21c41013933877917848f97f92202309971fbac432b10e21c397e3
+Description:  vlmcsd is a KMS Emulator in C.
+
