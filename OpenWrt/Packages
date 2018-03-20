@@ -423,11 +423,11 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: HotBird64
 Architecture: mvebu
-Installed-Size: 51735
+Installed-Size: 51730
 Filename: vlmcsd_svn1111-1_mvebu.ipk
-Size: 52258
-MD5Sum: 57ed193e03d6abbd2fa030784c5a03f4
-SHA256sum: d85c1caa0657933fedd29fa612e90ad5027a3fc73c6df97aa3da15636f813467
+Size: 52305
+MD5Sum: f7dcb53ac6cebea9f9273502be44657b
+SHA256sum: 58648d6f2db69799a095b527bd44eb437b93bbcccd57628bedbeacd79d28c24d
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
