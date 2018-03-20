@@ -15,22 +15,24 @@ env:
   - USER=cokebar
   - REPO=openwrt-vlmcsd
   matrix:
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/ar71xx/generic/OpenWrt-SDK-15.05.1-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/ar71xx/generic/OpenWrt-SDK-15.05.1-ar71xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/ar71xx/nand/lede-sdk-17.01.4-ar71xx-nand_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/OpenWrt-SDK-15.05.1-ramips-mt7620_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/OpenWrt-SDK-15.05.1-ramips-mt7620_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/ramips/mt7620/lede-sdk-17.01.4-ramips-mt7620_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/brcm63xx/generic/OpenWrt-SDK-15.05.1-brcm63xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/brcm63xx/generic/OpenWrt-SDK-15.05.1-brcm63xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/brcm63xx/generic/lede-sdk-17.01.4-brcm63xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/bcm53xx/generic/OpenWrt-SDK-15.05.1-bcm53xx_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/bcm53xx/generic/OpenWrt-SDK-15.05.1-bcm53xx_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/bcm53xx/generic/lede-sdk-17.01.4-bcm53xx_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/brcm47xx/generic/OpenWrt-SDK-15.05.1-brcm47xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/brcm47xx/generic/OpenWrt-SDK-15.05.1-brcm47xx-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/brcm47xx/generic/lede-sdk-17.01.4-brcm47xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/mvebu/generic/OpenWrt-SDK-15.05.1-mvebu_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/mvebu/generic/OpenWrt-SDK-15.05.1-mvebu_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/mvebu/generic/lede-sdk-17.01.4-mvebu_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/x86/generic/OpenWrt-SDK-15.05.1-x86-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/x86/generic/OpenWrt-SDK-15.05.1-x86-generic_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/x86/generic/lede-sdk-17.01.4-x86-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/chaos_calmer/15.05.1/x86/64/OpenWrt-SDK-15.05.1-x86-64_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/x86/64/OpenWrt-SDK-15.05.1-x86-64_gcc-4.8-linaro_uClibc-0.9.33.2.Linux-x86_64.tar.bz2
   - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.4/targets/x86/64/lede-sdk-17.01.4-x86-64_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://archive.openwrt.org/chaos_calmer/15.05.1/kirkwood/generic/OpenWrt-SDK-15.05.1-kirkwood_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
+  - OSVER=LEDE      SDK_URL=https://downloads.openwrt.org/releases/17.01.4/targets/kirkwood/generic/lede-sdk-17.01.4-kirkwood_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
 install:
 - mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
 - wget "http://archive.ubuntu.com/ubuntu/pool/main/c/ccache/ccache_3.3.4-1_amd64.deb"
@@ -62,14 +64,3 @@ script:
 - cd $TRAVIS_BUILD_DIR/
 - chmod a+x $TRAVIS_BUILD_DIR/deploy.sh
 after_success: "$TRAVIS_BUILD_DIR/deploy.sh"
-before_deploy: git fetch --tags
-deploy:
-  provider: releases
-  api_key:
-    secure: "mFIoatnORrXkwNmNa9bsaWurutMhwAtDB0BS1PGQIVIpBJpnaqcYgwE4kxQ9GCbvjm3u308gUKr+iWiO9LDhUn+Gu9uTZvf79g17/nt85EGxqL5Xoyby2IXh/j4JSQnLiqIoRvutayQ+a0oTD/AUv3B/WhclvJpNplkkE3d6ryHXe7SDsuz1HDiO7vLlHQYTo6c+4eIfPxLjkodjcwiZnzAgQ+vzjn6NLVAKextfLslGDhyvxdtZeTSHgpGOv9pKT6OdbCKslDqy198yYIGifUydlvOKdc6WRBgITypXBntZ4FK1Z0eThqhqXPUVGaIs2UZ2+wyAXczKRrlOtXtr6vLyGGqcyhAy32ly32HJ3mVZAEMqeti4+ZsVWq4QhFTDxQt1ar5qdmUEVScPxw4Dg+ByQmkGo+QWd9BYh9appa1540vyLfDkc28wAOo8fsvhXVaNp7pKCCeD8z5Tfl2qeMasR5Vz2s+EtL9wu9V+jQzdFqese7G1NTb+3lVgk/ZqW9Q+pnKwYohykFnfPtK+vlQCi1JWgC5elIFMdmNEfflCDeqayTdCrtLJzFXZFdbaxJ6INqTpiPXK5DpRum28XiUmo9nFXPqtoDUu9vcmd92AZZfApSgmMk+Efis3y6288qpFsKk/zBO7DVpsGMiEIKrjgZbgL+nOXwV4Q6ynhnc="
-  skip_cleanup: true
-  file_glob: true
-  file: "$TRAVIS_BUILD_DIR/*.ipk"
-  on:
-    tags: true
-    all_branches: true
