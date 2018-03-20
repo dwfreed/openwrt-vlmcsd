@@ -31,5 +31,4 @@ If you don't use luci-app-vlmcsd and you want vlmcsd support KMS auto activation
 Pre-compiled Download
 -----
 Your can find pre-compiled ipk:
-- in this branch: https://github.com/cokebar/openwrt-vlmcsd/tree/gh-pages
-- on release page: https://github.com/cokebar/openwrt-vlmcsd/releases
+https://github.com/cokebar/openwrt-vlmcsd/tree/gh-pages
