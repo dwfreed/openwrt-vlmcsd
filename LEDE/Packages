@@ -547,10 +547,10 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: HotBird64
 Architecture: mips_24kc
-Installed-Size: 51426
+Installed-Size: 51435
 Filename: vlmcsd_svn1111-2_mips_24kc.ipk
-Size: 51943
-SHA256sum: 1c6f2b4b7f3a281468613d67c8e00f08769fa12f70f3f2d06e0ce76bbb8a7de4
+Size: 51868
+SHA256sum: d3efeff5448638d6abcf8c188fdf9f129825981483598df61f52cd016a4817b5
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
