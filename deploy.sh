@@ -9,12 +9,12 @@ git config user.name "Doug Freed"
 git config user.email "dwfreed@mtu.edu"
 mkdir -p ${OSVER}
 pushd $OSVER
-cp $TRAVIS_BUILD_DIR/*.ipk .
-$TRAVIS_BUILD_DIR/sdk/$SDK_DIR/scripts/ipkg-make-index.sh . > Packages
-gzip -c Packages > Packages.gz
+cp -r $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/* .
+rm -r */{luci,packages,routing,telephony}
+ARCH=$(basename $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/*)
 cat > index.html <<EOF
 <html><body><pre>
-echo "src/gz announce http://${USER}.github.io/${REPO}/${OSVER}" >> /etc/opkg.conf
+echo "src/gz openwrt-vlmcsd http://${USER}.github.io/${REPO}/${OSVER}/${ARCH}/base" >> /etc/opkg.conf
 opkg update
 opkg install ${PACKAGE}
 </pre></body></html>
@@ -26,7 +26,7 @@ OpenWrt repository for ${PACKAGE}
 Binaries built from this repository on $DATE can be downloaded from http://${USER}.github.io/${REPO}/.
 To install the ${PACKAGE} package, run
 \`\`\`
-echo "src/gz announce http://${USER}.github.io/${REPO}/${OSVER}" >> /etc/opkg.conf
+echo "src/gz openwrt-vlmcsd http://${USER}.github.io/${REPO}/${OSVER}/${ARCH}/base" >> /etc/opkg.conf
 opkg update
 opkg install ${PACKAGE}
 \`\`\`

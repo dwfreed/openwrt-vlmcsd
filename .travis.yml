@@ -44,6 +44,7 @@ install:
 - tar xf $FILE
 - if [ "$OSVER" = "OpenWrt" ]; then SDK_DIR="openwrt-sdk-*"; elif [ "$OSVER" = "LEDE" ]; then SDK_DIR="lede-sdk-*"; fi
 - cd $TRAVIS_BUILD_DIR/sdk/$SDK_DIR
+- echo "$SIGNING_KEY" > key-build
 - mkdir package/$PACKAGE
 - ln -s $TRAVIS_BUILD_DIR/Makefile package/$PACKAGE/
 - ln -s $TRAVIS_BUILD_DIR/files package/$PACKAGE/
@@ -59,8 +60,7 @@ script:
 - ./scripts/feeds update packages >/dev/null
 - make defconfig
 - make package/vlmcsd/compile V=s
-- find $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/
-- find . -name *vlmcsd*.ipk -exec cp {} $TRAVIS_BUILD_DIR \;
+- make package/index
 - cd $TRAVIS_BUILD_DIR/
 - chmod a+x $TRAVIS_BUILD_DIR/deploy.sh
 after_success: "$TRAVIS_BUILD_DIR/deploy.sh"
