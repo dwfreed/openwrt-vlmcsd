@@ -1,9 +1,9 @@
 OpenWrt repository for vlmcsd
 ========
-Binaries built from this repository on 2018-06-09 can be downloaded from http://cokebar.github.io/openwrt-vlmcsd/.
+Binaries built from this repository on 2018-08-07 can be downloaded from http://dwfreed.github.io/openwrt-vlmcsd/.
 To install the vlmcsd package, run
 ```
-echo "src/gz announce http://cokebar.github.io/openwrt-vlmcsd/LEDE" >> /etc/opkg.conf
+echo "src/gz announce http://dwfreed.github.io/openwrt-vlmcsd/LEDE" >> /etc/opkg.conf
 opkg update
 opkg install vlmcsd
 ```
