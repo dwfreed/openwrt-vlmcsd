@@ -3,8 +3,7 @@
 # Deploy binaries built with travis-ci to GitHub Pages,
 # where they can be accessed by OpenWrt opkg directly
 cd /tmp/
-git clone https://${USER}:${TOKEN}@github.com/${USER}/${REPO}.git --branch gh-pages \
---single-branch gh-pages > /dev/null 2>&1 || exit 1 # so that the key does not leak to the logs in case of errors
+git clone https://${USER}:${TOKEN}@github.com/${USER}/${REPO}.git --branch gh-pages --single-branch gh-pages > /dev/null 2>&1 || exit 1 # so that the key does not leak to the logs in case of errors
 cd gh-pages || exit 1
 git config user.name "Doug Freed"
 git config user.email "dwfreed@mtu.edu"
