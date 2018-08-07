@@ -1,0 +1,15 @@
+Package: vlmcsd
+Version: svn1111-4
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: HotBird64
+Architecture: arm_xscale
+Installed-Size: 51523
+Filename: vlmcsd_svn1111-4_arm_xscale.ipk
+Size: 51916
+SHA256sum: af647fc7dec742f2361f5ae689d3bd1603725f6cb67c5a69bc97e86fac2b1ee6
+Description:  vlmcsd is a KMS Emulator in C.
+
