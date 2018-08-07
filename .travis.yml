@@ -60,7 +60,7 @@ script:
 - ./scripts/feeds update packages >/dev/null
 - make defconfig
 - make package/vlmcsd/compile V=s
-- make package/index
+- make -j1 V=s package/index
 - cd $TRAVIS_BUILD_DIR/
 - chmod a+x $TRAVIS_BUILD_DIR/deploy.sh
 after_success: "$TRAVIS_BUILD_DIR/deploy.sh"
