@@ -10,7 +10,6 @@ Architecture: ar71xx
 Installed-Size: 49345
 Filename: vlmcsd_svn1107-1_ar71xx.ipk
 Size: 49519
-MD5Sum: 749b8bbf47d1e08d93b1a0ff8a893e45
 SHA256sum: 36f8aed23b67bac7946440698cc2e88ba713ea23aa6c94e7112f82538480e84d
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -26,7 +25,6 @@ Architecture: bcm53xx
 Installed-Size: 51158
 Filename: vlmcsd_svn1107-1_bcm53xx.ipk
 Size: 51635
-MD5Sum: 5225b0222343a5f55568c37b1f8a450b
 SHA256sum: bc5585376fb91183f8a45eec40374e7ef92c4240cf427e8d665a6ca1fee05d76
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -42,7 +40,6 @@ Architecture: brcm47xx
 Installed-Size: 54817
 Filename: vlmcsd_svn1107-1_brcm47xx.ipk
 Size: 54796
-MD5Sum: 0b10e005d21bc3ae3ad5223139184a21
 SHA256sum: 291ff240b3513357844c2d831a2ada7027597841acb8ced4c9e3cf44a706d05b
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -58,7 +55,6 @@ Architecture: mvebu
 Installed-Size: 51158
 Filename: vlmcsd_svn1107-1_mvebu.ipk
 Size: 51148
-MD5Sum: 2ab8b7d9b13231c8d769c467cfdc8194
 SHA256sum: d7ab7e9dd422476528ae7902027b6cb3ffb04cbfbe11a0d92635b94add8750d3
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -74,7 +70,6 @@ Architecture: ramips_24kec
 Installed-Size: 54066
 Filename: vlmcsd_svn1107-1_ramips_24kec.ipk
 Size: 54505
-MD5Sum: a9df15cfebef0c97a3cf0546d80d6a68
 SHA256sum: 2d8fd3365d9bf4ea0cfcd669d125290e1554767d47364f19f7dd88f94b233940
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -90,7 +85,6 @@ Architecture: x86_64
 Installed-Size: 51434
 Filename: vlmcsd_svn1107-1_x86_64.ipk
 Size: 51489
-MD5Sum: 83304ad42f6f29dca30fe19db8a149bd
 SHA256sum: 2dbe5116ebe9a300a112f9c1e7f519f7416a8c781b3b88862af879e83fe7b9a0
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -106,7 +100,6 @@ Architecture: x86
 Installed-Size: 49510
 Filename: vlmcsd_svn1107-1_x86.ipk
 Size: 49845
-MD5Sum: 9378e283297cfd94bc1e10908ff36247
 SHA256sum: f71f5c61814bca85b5b20b3730bbe4db62307ac584b27dbf41d5f4bb9b6029ba
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -122,7 +115,6 @@ Architecture: ar71xx
 Installed-Size: 49603
 Filename: vlmcsd_svn1108-1_ar71xx.ipk
 Size: 49604
-MD5Sum: e3f134b7c340efd91ca40e366aa16689
 SHA256sum: 21e699f28e6d8a73e066614e7dc20433a7caebd7cacd094652aefdb321bfa172
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -138,7 +130,6 @@ Architecture: bcm53xx
 Installed-Size: 51430
 Filename: vlmcsd_svn1108-1_bcm53xx.ipk
 Size: 51958
-MD5Sum: ed2de5bd6f5c428926a68fd26528cd4f
 SHA256sum: 88fcf5793508aa0c4fb420c2b0fbe32f75ff9697d4e50b1201d16c27fa79a263
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -154,7 +145,6 @@ Architecture: brcm47xx
 Installed-Size: 55047
 Filename: vlmcsd_svn1108-1_brcm47xx.ipk
 Size: 55584
-MD5Sum: 0446e87af757f4eea64f3c2b7e6b3aa6
 SHA256sum: a4819d42dcf668d5292422c83a4566995d7d6b1d3d8d37d2d825f890558989d1
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -170,7 +160,6 @@ Architecture: brcm63xx
 Installed-Size: 55607
 Filename: vlmcsd_svn1108-1_brcm63xx.ipk
 Size: 55751
-MD5Sum: 4ed62590cab84cb63c02e1442fcd8e35
 SHA256sum: e78262cdee8053f2e79c512d8448ecd8906171cd4bf5e95adf886f24d8607904
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -186,7 +175,6 @@ Architecture: mvebu
 Installed-Size: 51433
 Filename: vlmcsd_svn1108-1_mvebu.ipk
 Size: 51922
-MD5Sum: 0f88a668062eb2d48f74fc8a4606d0ed
 SHA256sum: 49bd7dff1f1608571e728c95b599a49a41bc4653a8b3ed96f14e857c21f9e12f
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -202,7 +190,6 @@ Architecture: ramips_24kec
 Installed-Size: 54282
 Filename: vlmcsd_svn1108-1_ramips_24kec.ipk
 Size: 54885
-MD5Sum: 79c6fe557acfdae465af9c0a7910c112
 SHA256sum: 90bcb7585998a84cc8927509de602433d9714d6607c787ed79f0398604f077db
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -218,7 +205,6 @@ Architecture: x86_64
 Installed-Size: 51656
 Filename: vlmcsd_svn1108-1_x86_64.ipk
 Size: 52075
-MD5Sum: 3bb19d883f14ea7fc76e833267a24482
 SHA256sum: a28fe37e0eb381de9ef2dd8ad41484b74b1f39b86513f9baa918bbd3fbe53ce9
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -234,7 +220,6 @@ Architecture: x86
 Installed-Size: 49745
 Filename: vlmcsd_svn1108-1_x86.ipk
 Size: 50126
-MD5Sum: 5acce0f6f7eb45cbca2513e04d9f6c25
 SHA256sum: d79eadb160e7206a532ee436e64dbd7a3798d94c7a9611fc8e543d3d482abd1c
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -250,7 +235,6 @@ Architecture: ar71xx
 Installed-Size: 49940
 Filename: vlmcsd_svn1110-1_ar71xx.ipk
 Size: 49996
-MD5Sum: 9be599082f6b49e90ed46134acc88fe7
 SHA256sum: b7c6422bba30e46b26167ba6b7e56e2acc6c6bc055fb034b5a9034fe85068517
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -266,7 +250,6 @@ Architecture: bcm53xx
 Installed-Size: 51694
 Filename: vlmcsd_svn1110-1_bcm53xx.ipk
 Size: 52215
-MD5Sum: e9981b1dc1ca87fa79362503d958a6f9
 SHA256sum: 2c3f1f6355ee45bd0e023ca772e28b1b0215e77bf88045cca4eaf4cf832e0903
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -282,7 +265,6 @@ Architecture: brcm47xx
 Installed-Size: 55371
 Filename: vlmcsd_svn1110-1_brcm47xx.ipk
 Size: 55583
-MD5Sum: 88e1434c70f8177139e9e2e6829ec580
 SHA256sum: e2afe5563c0f60ec6ae4672b438a728de7ad2c50270983747fb7aa8c9d91e99e
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -298,7 +280,6 @@ Architecture: brcm63xx
 Installed-Size: 55967
 Filename: vlmcsd_svn1110-1_brcm63xx.ipk
 Size: 55911
-MD5Sum: 7e12c0f28fd294890e3affbde0a6a557
 SHA256sum: ed90cd1821afb6aa0770227a9b4cb4e6f75154a483a71a8f54ca736dd143443a
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -314,7 +295,6 @@ Architecture: mvebu
 Installed-Size: 51689
 Filename: vlmcsd_svn1110-1_mvebu.ipk
 Size: 51748
-MD5Sum: 32a79c9145ecaee616747c087991485f
 SHA256sum: c9515928dd47bad9d277d13edcba5282b449f6ba5651a5c3cba58d74b3222e14
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -330,7 +310,6 @@ Architecture: ramips_24kec
 Installed-Size: 54724
 Filename: vlmcsd_svn1110-1_ramips_24kec.ipk
 Size: 54922
-MD5Sum: 5a1726fa697b4462c57d838f9e79b6c0
 SHA256sum: 9d2f750d70c4316b167de9502a711c9d5ef9181634065d40b982f32a5a168c9c
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -346,7 +325,6 @@ Architecture: x86_64
 Installed-Size: 52023
 Filename: vlmcsd_svn1110-1_x86_64.ipk
 Size: 51569
-MD5Sum: e4ef7c44f1f2e2508b0f7b9fa1ec2942
 SHA256sum: 2aa99c0ab644f73242476db3285b2965fe0d5aefd112d8ce1beb86957c199689
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -362,7 +340,6 @@ Architecture: ar71xx
 Installed-Size: 49980
 Filename: vlmcsd_svn1111-1_ar71xx.ipk
 Size: 50527
-MD5Sum: 167568fcc5399b89341705278b65049e
 SHA256sum: 7dcb3afe1253b5baf136943febe03026e29d360936a5a00ca9ac0f3ebc54f0c2
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -378,7 +355,6 @@ Architecture: bcm53xx
 Installed-Size: 51734
 Filename: vlmcsd_svn1111-1_bcm53xx.ipk
 Size: 52234
-MD5Sum: d8962f6d1d2909b0fcfd8abeeba98b56
 SHA256sum: 09d8cb95604a2a25687191721e03d9db23de2030d0e4c4bd891f69a3b901caf8
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -394,7 +370,6 @@ Architecture: brcm47xx
 Installed-Size: 55403
 Filename: vlmcsd_svn1111-1_brcm47xx.ipk
 Size: 55708
-MD5Sum: df81e80d64761f4669af0292fa2ee53f
 SHA256sum: 8d021fd0a4308ac73ee74d87dacd485f81dd9d71862f97807426385f375839a3
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -410,7 +385,6 @@ Architecture: brcm63xx
 Installed-Size: 56013
 Filename: vlmcsd_svn1111-1_brcm63xx.ipk
 Size: 56258
-MD5Sum: efe1edc33c69c8049fd545bd0e2f4be7
 SHA256sum: a1f280c8ef95797de76f35bb272ba8f531f3fdd56dc5e6b726711d3242bec08d
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -426,7 +400,6 @@ Architecture: kirkwood
 Installed-Size: 51985
 Filename: vlmcsd_svn1111-1_kirkwood.ipk
 Size: 52601
-MD5Sum: 0ee0cb878dedef064ac48f9aae5f1ade
 SHA256sum: ebb6bdfcb01689300d1e255dbdf69a4c38e5ba85a55b63352ac2617aea090e2b
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -442,7 +415,6 @@ Architecture: mvebu
 Installed-Size: 51730
 Filename: vlmcsd_svn1111-1_mvebu.ipk
 Size: 52305
-MD5Sum: f7dcb53ac6cebea9f9273502be44657b
 SHA256sum: 58648d6f2db69799a095b527bd44eb437b93bbcccd57628bedbeacd79d28c24d
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -458,7 +430,6 @@ Architecture: ramips_24kec
 Installed-Size: 54769
 Filename: vlmcsd_svn1111-1_ramips_24kec.ipk
 Size: 55023
-MD5Sum: 5a3ee6f940be139bbca2e61009c264a5
 SHA256sum: f977eb0a141fc192104bf2075da39166ae2879a473051a308cdc924988e7a658
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -474,7 +445,6 @@ Architecture: x86_64
 Installed-Size: 52077
 Filename: vlmcsd_svn1111-1_x86_64.ipk
 Size: 52088
-MD5Sum: 89bdacdfabba8bdbed192c0c73ead148
 SHA256sum: d50f10c96d51a0a39f9da6af5d96e6ff65e82ca94189c197fc3766ac03928395
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -490,7 +460,6 @@ Architecture: x86
 Installed-Size: 50102
 Filename: vlmcsd_svn1111-1_x86.ipk
 Size: 50568
-MD5Sum: 73c360a560ead52d02676cd39f02c62d
 SHA256sum: 5c9c349185315a47d6c064b34b2d8115bb7d0f32d5ff14e074448a260a546098
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -506,7 +475,6 @@ Architecture: ar71xx
 Installed-Size: 49990
 Filename: vlmcsd_svn1111-2_ar71xx.ipk
 Size: 50333
-MD5Sum: b8b19da9fa9d5d5b43ea2cc8a7a0fdad
 SHA256sum: f2fd980d28d6dba2cd9c7c0ee7d87f9aff668b21029a9db507468f09547ef2ad
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -522,7 +490,6 @@ Architecture: bcm53xx
 Installed-Size: 51736
 Filename: vlmcsd_svn1111-2_bcm53xx.ipk
 Size: 52045
-MD5Sum: acce96953849a6be7850d67a1436e1b2
 SHA256sum: db00f2d70548b8c2df3ad32e59a7b074f0e960fa6109edd4d7b72fcf9651a364
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -538,7 +505,6 @@ Architecture: brcm47xx
 Installed-Size: 55417
 Filename: vlmcsd_svn1111-2_brcm47xx.ipk
 Size: 55459
-MD5Sum: 5ae78cb4e3117734757f02c63aee9d55
 SHA256sum: a195ba9ad7f063287150ad8da9ab6498dc634935cfc3f4e7fd31a187f39bb784
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -554,7 +520,6 @@ Architecture: brcm63xx
 Installed-Size: 56019
 Filename: vlmcsd_svn1111-2_brcm63xx.ipk
 Size: 56233
-MD5Sum: 1a066ca335c3628144cf7e6f94e7c858
 SHA256sum: 8921224027e1471d661f7fe90b7666f4c012b38d1147a4adb4e0f96dc1287dfe
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -570,7 +535,6 @@ Architecture: kirkwood
 Installed-Size: 51982
 Filename: vlmcsd_svn1111-2_kirkwood.ipk
 Size: 52475
-MD5Sum: acf918c6d4d1161356779b05b0827c5e
 SHA256sum: b46c071c15e4da446b2c81de10708bfbfe470931f860337aeb56ca0dd74066ad
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -586,7 +550,6 @@ Architecture: mvebu
 Installed-Size: 51737
 Filename: vlmcsd_svn1111-2_mvebu.ipk
 Size: 51441
-MD5Sum: 9a7cc9cfc3f7e2ba981d86d9329a0d01
 SHA256sum: 945e210e239c4c6f86ac86fe36c8bc2ee9ac685c911a6dd9c54e9135d2a2bff2
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -602,7 +565,6 @@ Architecture: ramips_24kec
 Installed-Size: 54778
 Filename: vlmcsd_svn1111-2_ramips_24kec.ipk
 Size: 55006
-MD5Sum: 36ba112638118c8a53ff4e7de510501c
 SHA256sum: 6928d4285dc94a48aeec5f01e5f5d289c79a18973a0118f4d82d343d674099a9
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -618,7 +580,6 @@ Architecture: x86_64
 Installed-Size: 52076
 Filename: vlmcsd_svn1111-2_x86_64.ipk
 Size: 52463
-MD5Sum: f2b8bef2f489ea38d8eb8dc6af6049fe
 SHA256sum: 0f8a778674e9276d9f17979c87e74d02a0762c85110b31c0e6d469831d30bf69
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -634,7 +595,6 @@ Architecture: x86
 Installed-Size: 50104
 Filename: vlmcsd_svn1111-2_x86.ipk
 Size: 50312
-MD5Sum: 1266a7f05982d0c42701aafcb23ae0ae
 SHA256sum: 297ae07df243b11314d53c820aa617679439266fd700e40138043003a796e99b
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -650,7 +610,6 @@ Architecture: brcm63xx
 Installed-Size: 56019
 Filename: vlmcsd_svn1111-3_brcm63xx.ipk
 Size: 56212
-MD5Sum: 56fdb86a0ce03273a6523b57cf511ec3
 SHA256sum: 184bfa9cf9709b0659de8584d4f1b7bdcf0ba775d66462d4d3fd84e7798e5217
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -666,8 +625,22 @@ Architecture: kirkwood
 Installed-Size: 51990
 Filename: vlmcsd_svn1111-3_kirkwood.ipk
 Size: 52545
-MD5Sum: 10cfd4cabebbf197c0d0bfceb4e33df4
 SHA256sum: 6569fc2cf54dc59b9fb7eb2446fbdca851e24495c2b2a11042850a5134cad64d
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: vlmcsd
+Version: svn1111-3
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: HotBird64
+Architecture: mips_24kc
+Installed-Size: 49144
+Filename: vlmcsd_svn1111-3_mips_24kc.ipk
+Size: 49693
+SHA256sum: 62382af9b8681e435d5552ab59a73f398071a5db13ae9262b47c4ef9c73f1db5
 Description:  vlmcsd is a KMS Emulator in C.
 
 Package: vlmcsd
@@ -682,7 +655,6 @@ Architecture: mvebu
 Installed-Size: 51741
 Filename: vlmcsd_svn1111-3_mvebu.ipk
 Size: 52283
-MD5Sum: 7ed0437c1911102c1c0b89fec9858e69
 SHA256sum: 96cc83f08e8525e9036dde6fd8af6b04607797b1a529677a080dfdb35b24295e
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -698,7 +670,6 @@ Architecture: ramips_24kec
 Installed-Size: 54779
 Filename: vlmcsd_svn1111-3_ramips_24kec.ipk
 Size: 55102
-MD5Sum: ddbeea8d212f08cb0c97811ffbe74279
 SHA256sum: 4d03a95a04e18a10c41ee2479d47f0badb540739b6f6550ca60526b67044b1b0
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -714,7 +685,6 @@ Architecture: x86_64
 Installed-Size: 52088
 Filename: vlmcsd_svn1111-3_x86_64.ipk
 Size: 52407
-MD5Sum: c57d0c869427c3ba3fd1536a63d25fc2
 SHA256sum: 8a46087e483e850a6dc9a6f44c95e05683805e9b33c1ad25adbbb1706e4a6585
 Description:  vlmcsd is a KMS Emulator in C.
 
@@ -730,7 +700,6 @@ Architecture: x86
 Installed-Size: 50108
 Filename: vlmcsd_svn1111-3_x86.ipk
 Size: 50506
-MD5Sum: c6c466cc7f715878d3ff84df03c95d13
 SHA256sum: 04485614863ffbfcc2cfb4b34f5061d2132ef269113ef61082ce576002f3acf6
 Description:  vlmcsd is a KMS Emulator in C.
 
