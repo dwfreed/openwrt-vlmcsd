@@ -44,7 +44,8 @@ install:
 - tar xf $FILE
 - if [ "$OSVER" = "OpenWrt" ]; then SDK_DIR="openwrt-sdk-*"; elif [ "$OSVER" = "LEDE" ]; then SDK_DIR="lede-sdk-*"; fi
 - cd $TRAVIS_BUILD_DIR/sdk/$SDK_DIR
-- echo "$SIGNING_KEY" > key-build
+- echo "untrusted comment: usign key of Doug Freed" > key-build
+- echo "$SIGNING_KEY" >> key-build
 - mkdir package/$PACKAGE
 - ln -s $TRAVIS_BUILD_DIR/Makefile package/$PACKAGE/
 - ln -s $TRAVIS_BUILD_DIR/files package/$PACKAGE/
