@@ -37,7 +37,7 @@ popd
 #git pull
 git commit -a -m "Deploy Travis build $TRAVIS_BUILD_NUMBER to gh-pages"
 #git push -fq origin gh-pages:gh-pages > /dev/null 2>&1 || exit 1
-git push -fq origin gh-pages > /dev/null 2>&1 || exit 1 # so that the key does not leak to the logs in case of errors
+git push origin gh-pages > /dev/null 2>&1 || exit 1 # so that the key does not leak to the logs in case of errors
 #git push -f origin gh-pages:gh-pages
 echo "Uploaded files to gh-pages"
 echo
