@@ -12,7 +12,7 @@ pushd $OSVER
 cp -r $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/* .
 rm -r */{luci,packages,routing,telephony}
 ARCH=$(basename $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/*)
-cat > index.html <<EOF
+cat > ${ARCH}/index.html <<EOF
 <html><body><pre>
 echo "src/gz openwrt-vlmcsd http://${USER}.github.io/${REPO}/${OSVER}/${ARCH}/base" >> /etc/opkg.conf
 opkg update
@@ -20,7 +20,7 @@ opkg install ${PACKAGE}
 </pre></body></html>
 EOF
 DATE=$(date "+%Y-%m-%d")
-cat > README.md <<EOF
+cat > ${ARCH}/README.md <<EOF
 OpenWrt repository for ${PACKAGE}
 ========
 Binaries built from this repository on $DATE can be downloaded from http://${USER}.github.io/${REPO}/.
