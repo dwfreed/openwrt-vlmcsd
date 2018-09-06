@@ -15,24 +15,24 @@ env:
   - USER=dwfreed
   - REPO=openwrt-vlmcsd
   matrix:
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/ar71xx/generic/openwrt-sdk-18.06.0-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/ar71xx/nand/lede-sdk-17.01.5-ar71xx-nand_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/ramips/mt7620/openwrt-sdk-18.06.0-ramips-mt7620_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/ramips/mt7620/lede-sdk-17.01.5-ramips-mt7620_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/brcm63xx/generic/openwrt-sdk-18.06.0-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/brcm63xx/generic/lede-sdk-17.01.5-brcm63xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/bcm53xx/generic/openwrt-sdk-18.06.0-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/bcm53xx/generic/lede-sdk-17.01.5-bcm53xx_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/brcm47xx/generic/openwrt-sdk-18.06.0-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/brcm47xx/generic/lede-sdk-17.01.5-brcm47xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/mvebu/cortexa9/openwrt-sdk-18.06.0-mvebu-cortexa9_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/mvebu/generic/lede-sdk-17.01.5-mvebu_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/x86/generic/openwrt-sdk-18.06.0-x86-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/x86/generic/lede-sdk-17.01.5-x86-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/x86/64/openwrt-sdk-18.06.0-x86-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/x86/64/lede-sdk-17.01.5-x86-64_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.0/targets/kirkwood/generic/openwrt-sdk-18.06.0-kirkwood_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.5/targets/kirkwood/generic/lede-sdk-17.01.5-kirkwood_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/ar71xx/generic/openwrt-sdk-18.06.1-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/ar71xx/nand/lede-sdk-17.01.6-ar71xx-nand_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/ramips/mt7620/openwrt-sdk-18.06.1-ramips-mt7620_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/ramips/mt7620/lede-sdk-17.01.6-ramips-mt7620_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/brcm63xx/generic/openwrt-sdk-18.06.1-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/brcm63xx/generic/lede-sdk-17.01.6-brcm63xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/bcm53xx/generic/openwrt-sdk-18.06.1-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/bcm53xx/generic/lede-sdk-17.01.6-bcm53xx_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/brcm47xx/generic/openwrt-sdk-18.06.1-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/brcm47xx/generic/lede-sdk-17.01.6-brcm47xx-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/mvebu/cortexa9/openwrt-sdk-18.06.1-mvebu-cortexa9_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/mvebu/generic/lede-sdk-17.01.6-mvebu_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/x86/generic/openwrt-sdk-18.06.1-x86-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/x86/generic/lede-sdk-17.01.6-x86-generic_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/x86/64/openwrt-sdk-18.06.1-x86-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/x86/64/lede-sdk-17.01.6-x86-64_gcc-5.4.0_musl-1.1.16.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt   SDK_URL=https://downloads.openwrt.org/releases/18.06.1/targets/kirkwood/generic/openwrt-sdk-18.06.1-kirkwood_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - OSVER=LEDE      SDK_URL=https://downloads.lede-project.org/releases/17.01.6/targets/kirkwood/generic/lede-sdk-17.01.6-kirkwood_gcc-5.4.0_musl-1.1.16_eabi.Linux-x86_64.tar.xz
 install:
 - mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
 - wget "http://archive.ubuntu.com/ubuntu/pool/main/c/ccache/ccache_3.3.4-1_amd64.deb"
