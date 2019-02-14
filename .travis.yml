@@ -1,10 +1,6 @@
 #filename:.travis.yml
 dist: xenial
 sudo: false
-cache:
-  directories:
-  - local/
-  - cache/
 notifications:
   email: false
 language: c
@@ -22,7 +18,6 @@ env:
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/bcm53xx/generic/openwrt-sdk-18.06.2-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2708/openwrt-sdk-18.06.2-brcm2708-bcm2708_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2709/openwrt-sdk-18.06.2-brcm2708-bcm2709_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2710/openwrt-sdk-18.06.2-brcm2708-bcm2710_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/generic/openwrt-sdk-18.06.2-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/mips74k/openwrt-sdk-18.06.2-brcm47xx-mips74k_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm63xx/generic/openwrt-sdk-18.06.2-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
@@ -34,7 +29,6 @@ env:
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/mvebu/cortexa9/openwrt-sdk-18.06.2-mvebu-cortexa9_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/octeon/generic/openwrt-sdk-18.06.2-octeon_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ramips/mt7620/openwrt-sdk-18.06.2-ramips-mt7620_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ramips/rt288x/openwrt-sdk-18.06.2-ramips-rt288x_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/x86/64/openwrt-sdk-18.06.2-x86-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/x86/generic/openwrt-sdk-18.06.2-x86-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
 install:

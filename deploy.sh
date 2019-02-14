@@ -33,7 +33,7 @@ opkg install ${PACKAGE}
 EOF
 git add -A
 popd
-#git pull
+git pull origin gh-pages > /dev/null 2>&1 || exit 1
 git commit -a -m "Deploy Travis build $TRAVIS_BUILD_NUMBER for $OSVER $ARCH to gh-pages"
 #git push -fq origin gh-pages:gh-pages > /dev/null 2>&1 || exit 1
 while ! git push origin gh-pages > /dev/null 2>&1; do
