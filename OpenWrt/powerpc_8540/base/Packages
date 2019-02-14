@@ -6,7 +6,7 @@ Section: net
 Architecture: powerpc_8540
 Installed-Size: 56258
 Filename: vlmcsd_svn1112-2_powerpc_8540.ipk
-Size: 56817
-SHA256sum: 75caa5ab0d5e825dec85d09892751f6847d7522f14b87a16222188f610687721
+Size: 56806
+SHA256sum: 93dedad393b76474bcbd63d73816693f9010c6ca668333600af744ccba641289
 Description:  vlmcsd is a KMS Emulator in C.
 
