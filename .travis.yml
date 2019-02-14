@@ -18,12 +18,11 @@ env:
   matrix:
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/apm821xx/nand/openwrt-sdk-18.06.2-apm821xx-nand_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ar71xx/generic/openwrt-sdk-18.06.2-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/armvirt/32/openwrt-sdk-18.06.2-armvirt-32_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/armvirt/64/openwrt-sdk-18.06.2-armvirt-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/bcm53xx/generic/openwrt-sdk-18.06.2-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2708/openwrt-sdk-18.06.2-brcm2708-bcm2708_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2709/openwrt-sdk-18.06.2-brcm2708-bcm2709_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2710/openwrt-sdk-18.06.2-brcm2708-bcm2710_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2710/openwrt-sdk-18.06.2-brcm2708-bcm2710_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/generic/openwrt-sdk-18.06.2-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/mips74k/openwrt-sdk-18.06.2-brcm47xx-mips74k_gcc-7.3.0_musl.Linux-x86_64.tar.xz
   - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm63xx/generic/openwrt-sdk-18.06.2-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
