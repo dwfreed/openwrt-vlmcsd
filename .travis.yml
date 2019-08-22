@@ -12,29 +12,26 @@ env:
   - REPO=openwrt-vlmcsd
   - OSVER=OpenWrt
   matrix:
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/apm821xx/nand/openwrt-sdk-18.06.2-apm821xx-nand_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ar71xx/generic/openwrt-sdk-18.06.2-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/armvirt/64/openwrt-sdk-18.06.2-armvirt-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/bcm53xx/generic/openwrt-sdk-18.06.2-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2708/openwrt-sdk-18.06.2-brcm2708-bcm2708_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm2708/bcm2709/openwrt-sdk-18.06.2-brcm2708-bcm2709_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/generic/openwrt-sdk-18.06.2-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm47xx/mips74k/openwrt-sdk-18.06.2-brcm47xx-mips74k_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/brcm63xx/generic/openwrt-sdk-18.06.2-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ipq806x/generic/openwrt-sdk-18.06.2-ipq806x_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/kirkwood/generic/openwrt-sdk-18.06.2-kirkwood_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/mpc85xx/generic/openwrt-sdk-18.06.2-mpc85xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/mvebu/cortexa53/openwrt-sdk-18.06.2-mvebu-cortexa53_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/mvebu/cortexa72/openwrt-sdk-18.06.2-mvebu-cortexa72_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/mvebu/cortexa9/openwrt-sdk-18.06.2-mvebu-cortexa9_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/octeon/generic/openwrt-sdk-18.06.2-octeon_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/ramips/mt7620/openwrt-sdk-18.06.2-ramips-mt7620_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/x86/64/openwrt-sdk-18.06.2-x86-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
-  - SDK_URL=https://downloads.openwrt.org/releases/18.06.2/targets/x86/generic/openwrt-sdk-18.06.2-x86-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/apm821xx/nand/openwrt-sdk-18.06.4-apm821xx-nand_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/ar71xx/generic/openwrt-sdk-18.06.4-ar71xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/armvirt/64/openwrt-sdk-18.06.4-armvirt-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/bcm53xx/generic/openwrt-sdk-18.06.4-bcm53xx_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/brcm2708/bcm2708/openwrt-sdk-18.06.4-brcm2708-bcm2708_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/brcm2708/bcm2709/openwrt-sdk-18.06.4-brcm2708-bcm2709_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/brcm47xx/generic/openwrt-sdk-18.06.4-brcm47xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/brcm47xx/mips74k/openwrt-sdk-18.06.4-brcm47xx-mips74k_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/brcm63xx/generic/openwrt-sdk-18.06.4-brcm63xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/ipq806x/generic/openwrt-sdk-18.06.4-ipq806x_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/kirkwood/generic/openwrt-sdk-18.06.4-kirkwood_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/mpc85xx/generic/openwrt-sdk-18.06.4-mpc85xx-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/mvebu/cortexa53/openwrt-sdk-18.06.4-mvebu-cortexa53_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/mvebu/cortexa72/openwrt-sdk-18.06.4-mvebu-cortexa72_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/mvebu/cortexa9/openwrt-sdk-18.06.4-mvebu-cortexa9_gcc-7.3.0_musl_eabi.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/octeon/generic/openwrt-sdk-18.06.4-octeon_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/ramips/mt7620/openwrt-sdk-18.06.4-ramips-mt7620_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/x86/64/openwrt-sdk-18.06.4-x86-64_gcc-7.3.0_musl.Linux-x86_64.tar.xz
+  - SDK_URL=https://downloads.openwrt.org/releases/18.06.4/targets/x86/generic/openwrt-sdk-18.06.4-x86-generic_gcc-7.3.0_musl.Linux-x86_64.tar.xz
 install:
-- mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
-- wget "http://archive.ubuntu.com/ubuntu/pool/main/c/ccache/ccache_3.4.1-1_amd64.deb"
-- dpkg -x *.deb .
 - mkdir -p $TRAVIS_BUILD_DIR/cache ; cd $TRAVIS_BUILD_DIR/cache
 - wget -c $SDK_URL
 - mkdir -p $TRAVIS_BUILD_DIR/sdk ; cd $TRAVIS_BUILD_DIR/sdk
@@ -48,7 +45,6 @@ install:
 - ln -s $TRAVIS_BUILD_DIR/Makefile package/vlmcsd/
 - ln -s $TRAVIS_BUILD_DIR/files package/vlmcsd/
 script:
-- export PATH=$TRAVIS_BUILD_DIR/local/usr/bin:$PATH
 - cd $TRAVIS_BUILD_DIR/sdk/$SDK_DIR
 - export SDK_DIR=$(basename `pwd`)
 - export PATH=$TRAVIS_BUILD_DIR/sdk/$SDK_DIR/staging_dir/host/bin:$PATH
