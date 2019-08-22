@@ -1,0 +1,38 @@
+commit 8a83892662d06a5f2fd4d95b73fe919a21066038
+Author: Jo-Philipp Wich <jo@mein.io>
+Date:   Wed Aug 7 07:15:07 2019 +0200
+
+    packages: apply usign padding workarounds to package indexes if needed
+    
+    Since usign miscalculates SHA-512 digests for input sizes of exactly
+    64 + N * 128 + 110 or 64 + N * 128 + 111 bytes, we need to apply some
+    white space padding to avoid triggering the hashing edge case.
+    
+    While usign itself has been fixed already, there is still many firmwares
+    in the wild which use broken usign versions to verify current package
+    indexes so we'll need to carry this workaround in the forseeable future.
+    
+    Ref: https://forum.openwrt.org/t/signature-check-failed/41945
+    Ref: https://git.openwrt.org/5a52b379902471cef495687547c7b568142f66d2
+    Signed-off-by: Jo-Philipp Wich <jo@mein.io>
+    (backported from commit e1f588e446c7ceb696b644b37aeab9b3476e2a57)
+
+diff --git a/package/Makefile b/package/Makefile
+index 610d09d6fe..42a4102f02 100644
+--- a/package/Makefile
++++ b/package/Makefile
+@@ -84,8 +84,12 @@ $(curdir)/index: FORCE
+ 		mkdir -p $$d; \
+ 		cd $$d || continue; \
+ 		$(SCRIPT_DIR)/ipkg-make-index.sh . 2>&1 > Packages.manifest; \
+-		grep -vE '^(Maintainer|LicenseFiles|Source|Require)' Packages.manifest > Packages && \
+-			gzip -9nc Packages > Packages.gz; \
++		grep -vE '^(Maintainer|LicenseFiles|Source|Require)' Packages.manifest > Packages; \
++		case "$$(((64 + $$(stat -L -c%s Packages)) % 128))" in 110|111) \
++			$(call ERROR_MESSAGE,WARNING: Applying padding in $$d/Packages to workaround usign SHA-512 bug!); \
++			{ echo ""; echo ""; } >> Packages;; \
++		esac; \
++		gzip -9nc Packages > Packages.gz; \
+ 	); done
+ ifdef CONFIG_SIGNED_PACKAGES
+ 	@echo Signing package index...
