@@ -1,12 +1,12 @@
 Package: vlmcsd
-Version: svn1112-2
+Version: svn1112-3
 Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: arm_cortex-a9
 Installed-Size: 51952
-Filename: vlmcsd_svn1112-2_arm_cortex-a9.ipk
-Size: 52680
-SHA256sum: e85c389c337664f3da3649220abbb4f9acaf7cf2f2414d59c480fb6fdae6f764
+Filename: vlmcsd_svn1112-3_arm_cortex-a9.ipk
+Size: 52134
+SHA256sum: 5feed6a43bfc8bc4c1b2ad3b41dc05826ddef1c38a80b0c82776fa22a4215eab
 Description:  vlmcsd is a KMS Emulator in C.
 
