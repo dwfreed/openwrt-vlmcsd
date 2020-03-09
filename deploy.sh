@@ -11,6 +11,7 @@ git config user.name "Doug Freed"
 git config user.email "dwfreed@mtu.edu"
 mkdir -p $OSVER
 pushd $OSVER
+SDK_DIR="openwrt-sdk-*"
 ARCH=$(basename $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/*)
 rm ${ARCH}/base/*.ipk
 cp -r $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/* .
