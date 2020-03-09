@@ -13,9 +13,9 @@ mkdir -p $OSVER
 pushd $OSVER
 SDK_DIR="openwrt-sdk-*"
 ARCH=$(basename $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/*)
-rm ${ARCH}/base/*.ipk
+rm -f ${ARCH}/base/*.ipk
 cp -r $TRAVIS_BUILD_DIR/sdk/$SDK_DIR/bin/packages/* .
-rm -r ${ARCH}/{luci,packages,routing,telephony}
+rm -rf ${ARCH}/{luci,packages,routing,telephony}
 cat > ${ARCH}/index.html <<EOF
 <html><body><pre>
 echo "src/gz openwrt-vlmcsd http://${USER}.github.io/${REPO}/${OSVER}/${ARCH}/base" >> /etc/opkg.conf
