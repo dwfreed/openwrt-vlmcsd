@@ -1,6 +1,5 @@
-#filename:.travis.yml
+os: linux
 dist: xenial
-sudo: false
 notifications:
   email: false
 language: c
@@ -10,7 +9,7 @@ env:
   - PACKAGE=vlmcsd
   - USER=dwfreed
   - REPO=openwrt-vlmcsd
-  matrix:
+  jobs:
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/apm821xx/nand/openwrt-sdk-19.07.2-apm821xx-nand_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/ar71xx/generic/openwrt-sdk-19.07.2-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/armvirt/64/openwrt-sdk-19.07.2-armvirt-64_gcc-7.5.0_musl.Linux-x86_64.tar.xz
