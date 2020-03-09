@@ -7,7 +7,7 @@ export FILE=$TRAVIS_BUILD_DIR/cache/$(basename $SDK_URL)
 tar xf $FILE
 SDK_DIR="openwrt-sdk-*"
 cd $TRAVIS_BUILD_DIR/sdk/$SDK_DIR
-"echo 'untrusted comment: usign key of Doug Freed' > key-build"
+echo 'untrusted comment: usign key of Doug Freed' > key-build
 echo "$SIGNING_KEY" >> key-build
 mkdir package/vlmcsd
 ln -s $TRAVIS_BUILD_DIR/Makefile package/vlmcsd/
