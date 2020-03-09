@@ -1,5 +1,6 @@
 #!/bin/bash
-set -e
+set -eux
+SDK_DIR="openwrt-sdk-*"
 cd $TRAVIS_BUILD_DIR/sdk/$SDK_DIR
 export SDK_DIR=$(basename `pwd`)
 export PATH=$TRAVIS_BUILD_DIR/sdk/$SDK_DIR/staging_dir/host/bin:$PATH

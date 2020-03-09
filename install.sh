@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -eux
 mkdir -p $TRAVIS_BUILD_DIR/cache ; cd $TRAVIS_BUILD_DIR/cache
 wget -c $SDK_URL
 mkdir -p $TRAVIS_BUILD_DIR/sdk ; cd $TRAVIS_BUILD_DIR/sdk
