@@ -21,7 +21,7 @@ env:
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/brcm47xx/generic/openwrt-sdk-19.07.2-brcm47xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/brcm47xx/mips74k/openwrt-sdk-19.07.2-brcm47xx-mips74k_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/brcm63xx/generic/openwrt-sdk-19.07.2-brcm63xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
-  - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/ipq806x/generic/openwrt-sdk-19.07.2-ipq806x_gcc-7.5.0_musl_eabi.Linux-x86_64.tar.xz
+  - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/ipq806x/generic/openwrt-sdk-19.07.2-ipq806x-generic_gcc-7.5.0_musl_eabi.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/mpc85xx/generic/openwrt-sdk-19.07.2-mpc85xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/mvebu/cortexa53/openwrt-sdk-19.07.2-mvebu-cortexa53_gcc-7.5.0_musl.Linux-x86_64.tar.xz
   - OSVER=OpenWrt_19.07 SDK_URL=https://downloads.openwrt.org/releases/19.07.2/targets/mvebu/cortexa72/openwrt-sdk-19.07.2-mvebu-cortexa72_gcc-7.5.0_musl.Linux-x86_64.tar.xz
