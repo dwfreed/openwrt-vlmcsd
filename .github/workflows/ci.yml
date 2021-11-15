@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches:
+      main
+    paths-ignore:
+      - 'README.md'
+      - 'update_matrix.py'
+
+env:
+  git-author-name: Doug Freed
+  git-author-email: dwfreed@mtu.edu
+  owrt-package: vlmcsd
+  repo-owner: dwfreed
+  repo-name: openwrt-vlmcsd
+  usign-key-name: Doug Freed
+
+jobs:
+  matrix-setup:
+    name: Matrix Setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: get-matrix
+        name: Get matrix
+        run: echo "::set-output name=matrix::$(<matrix.json)"
+    outputs:
+      matrix: ${{ steps.get-matrix.outputs.matrix }}
+
+  build-packages:
+    name: Build Packages
+    runs-on: ubuntu-latest
+    needs: matrix-setup
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.matrix-setup.outputs.matrix }}
+    env:
+      MATRIX_SDK_FILENAME: ${{ matrix.sdk_filename }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get the SDK
+        run: |
+          mkdir sdk
+          cd sdk
+          wget "${{ matrix.sdk_url }}"
+          tar xf "${MATRIX_SDK_FILENAME}"
+      - name: Set up package dir and signing key
+        run: |
+          cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+          mkdir package/vlmcsd
+          ln -s "${GITHUB_WORKSPACE}"/Makefile package/vlmcsd/
+          ln -s "${GITHUB_WORKSPACE}"/files package/vlmcsd/
+          echo 'untrusted comment: usign key of ${{ env.usign-key-name }}' > key-build
+          echo '${{ secrets.usign-key }}' >> key-build
+      - name: Add SDK bins to path
+        run: |
+          cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+          echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/host/bin >> "$GITHUB_PATH"
+          echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/toolchain-*/bin >> "$GITHUB_PATH"
+      - name: Update packages feed
+        run: |
+          cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+          scripts/feeds update packages >/dev/null
+      - name: Build package
+        run: |
+          cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+          make defconfig
+          make -j$(nproc) V=s package/vlmcsd/compile
+          make -j1 V=s package/index
