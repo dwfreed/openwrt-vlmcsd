@@ -66,5 +66,6 @@ jobs:
       - name: Build package
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+          make defconfig
           make -j$(nproc) V=s package/vlmcsd/compile
           make -j1 V=s package/index
