@@ -35,7 +35,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include: ${{ fromJson(needs.matrix-setup.outputs.matrix }}
+        include: ${{ fromJson(needs.matrix-setup.outputs.matrix) }}
     env:
       MATRIX_SDK_FILENAME: ${{ matrix.sdk_filename }}
     steps:
