@@ -1,0 +1,17 @@
+Package: vlmcsd
+Version: svn1113-2
+Depends: libc, libpthread
+Source: package/vlmcsd
+SourceName: vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1635066095
+Maintainer: HotBird64
+Architecture: mips_4kec
+Installed-Size: 61474
+Filename: vlmcsd_svn1113-2_mips_4kec.ipk
+Size: 61965
+SHA256sum: 38b7dfbf609a2195c974ed1e599ac5da4cbe7407b7966b573dc301e7bba72fb5
+Description:  vlmcsd is a KMS Emulator in C.
+
