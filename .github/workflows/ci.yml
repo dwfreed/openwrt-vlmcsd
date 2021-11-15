@@ -53,7 +53,7 @@ jobs:
           ln -s "${GITHUB_WORKSPACE}"/Makefile package/vlmcsd/
           ln -s "${GITHUB_WORKSPACE}"/files package/vlmcsd/
           echo 'untrusted comment: usign key of ${{ env.usign-key-name }}' > key-build
-          echo '${{ secrets.usign-key }}' >> key-build
+          echo '${{ secrets.USIGN_KEY }}' >> key-build
       - name: Add SDK bins to path
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
