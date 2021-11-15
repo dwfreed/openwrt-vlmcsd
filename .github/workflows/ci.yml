@@ -50,8 +50,8 @@ jobs:
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
           mkdir package/vlmcsd
-          ln -s "${GITHUB_WORKSPACE}"/Makefile package/vlmcsd/
-          ln -s "${GITHUB_WORKSPACE}"/files package/vlmcsd/
+          ln -s "${GITHUB_WORKSPACE}"/Makefile package/${{ env.owrt-package }}/
+          ln -s "${GITHUB_WORKSPACE}"/files package/${{ env.owrt-package }}/
           echo 'untrusted comment: usign key of ${{ env.usign-key-name }}' > key-build
           echo '${{ secrets.USIGN_KEY }}' >> key-build
       - name: Add SDK bins to path
@@ -67,5 +67,44 @@ jobs:
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
           make defconfig
-          make -j$(nproc) V=s package/vlmcsd/compile
+          make -j$(nproc) V=s package/${{ env.owrt-package }}/compile
           make -j1 V=s package/index
+      - name: Prepare artifact
+        run: |
+          mkdir -p OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
+          rsync -av --delete sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/bin/packages/${{ matrix.arch }}/base OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
+          tar cf OpenWrt_${{ matrix.major }}-${{ matrix.arch }}.tar OpenWrt_${{ matrix.major }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: OpenWrt_${{ matrix.major }}-${{ matrix.arch }}
+          path: OpenWrt_${{ matrix.major }}-${{ matrix.arch }}.tar
+
+  deploy:
+    name: Deploy Packages
+    runs-on: ubuntu-latest
+    needs: build-packages
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+      - name: Flush existing files
+        run: rm OpenWrt_*
+      # Without any parameters, download-artifact grabs everything, which is what we want
+      - uses: actions/download-artifact@v2
+      - name: Extract artifacts
+        run: |
+          for tarball in OpenWrt_*-*/*.tar; do
+            tar xf ${tarball}
+            rm ${tarball}
+          done
+      - name: Generate READMEs
+        run: true # TODO
+      - name: Configure git
+        run: |
+          git config user.name ${{ env.git-author-name }}
+          git config user.email ${{ env.git-author-email }}
+      - name: Commit
+        run: |
+          git add -A
+          git commit -m "Deploy GH Actions build ${GITHUB_RUN_NUMBER} to gh-pages"
+          git push
