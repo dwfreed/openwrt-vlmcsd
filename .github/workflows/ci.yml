@@ -72,7 +72,7 @@ jobs:
       - name: Prepare artifact
         run: |
           mkdir -p OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
-          rsync -av --delete sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/bin/packages/${{ matrix.arch }}/base OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
+          rsync -av sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/bin/packages/${{ matrix.arch }}/base OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
           tar cf OpenWrt_${{ matrix.major }}-${{ matrix.arch }}.tar OpenWrt_${{ matrix.major }}
       - uses: actions/upload-artifact@v2
         with:
@@ -97,8 +97,9 @@ jobs:
             tar xf ${tarball}
             rm ${tarball}
           done
+          find -type d -empty -delete
       - name: Generate READMEs
-        run: true # TODO
+        run: env # TODO
       - name: Configure git
         run: |
           git config user.name ${{ env.git-author-name }}
