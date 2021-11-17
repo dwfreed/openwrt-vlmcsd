@@ -6,7 +6,7 @@ Section: net
 Architecture: arm_xscale
 Installed-Size: 60755
 Filename: vlmcsd_svn1113-2_arm_xscale.ipk
-Size: 61207
-SHA256sum: 6b51193f31ffb127d07c8b3900c084027b1b0ffbbb48fe128047b86a088502cd
+Size: 61220
+SHA256sum: eb47b1738e3734e4bda65d838ff21d9df5eeadd83d0530aa261b475e02662f17
 Description:  vlmcsd is a KMS Emulator in C.
 
