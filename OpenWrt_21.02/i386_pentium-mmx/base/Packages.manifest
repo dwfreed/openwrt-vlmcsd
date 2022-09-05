@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: i386_pentium-mmx
 Installed-Size: 55821
 Filename: vlmcsd_svn1113-2_i386_pentium-mmx.ipk
-Size: 56418
-SHA256sum: 29534b84b14189e3d12fcee20cf0b5a1ee77e22884995aed644d747b25d6e670
+Size: 56414
+SHA256sum: c9c35add67da5a57b8a37ce53449314eecf50087d9bc642861b9e0f3b3324960
 Description:  vlmcsd is a KMS Emulator in C.
 
