@@ -1,0 +1,12 @@
+Package: vlmcsd
+Version: svn1113-2
+Depends: libc, libpthread
+License: MIT
+Section: net
+Architecture: i386_pentium-mmx
+Installed-Size: 55894
+Filename: vlmcsd_svn1113-2_i386_pentium-mmx.ipk
+Size: 56631
+SHA256sum: cce1225512cc314e26be3987b136a07e1219d25f6dae3ff45d55aaeb32165b2d
+Description:  vlmcsd is a KMS Emulator in C.
+

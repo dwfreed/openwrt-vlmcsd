@@ -8,9 +8,9 @@ LicenseFiles: LICENSE
 Section: net
 Maintainer: HotBird64
 Architecture: mipsel_mips32
-Installed-Size: 61812
+Installed-Size: 61817
 Filename: vlmcsd_svn1113-2_mipsel_mips32.ipk
-Size: 62459
-SHA256sum: 5b55a55b2703d673d3e96fda43c1af276bfe59632ed776f46eba46795112c1a3
+Size: 62516
+SHA256sum: cf46ba6dc720633ff543a3abcd0495edc675fe985313be1fbb932fda1bad6f75
 Description:  vlmcsd is a KMS Emulator in C.
 
