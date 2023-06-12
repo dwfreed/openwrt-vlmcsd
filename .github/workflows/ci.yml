@@ -21,7 +21,7 @@ jobs:
     name: Matrix Setup
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - id: get-matrix
         name: Get matrix
         run: echo "::set-output name=matrix::$(<matrix.json)"
@@ -39,7 +39,7 @@ jobs:
     env:
       MATRIX_SDK_FILENAME: ${{ matrix.sdk_filename }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Get the SDK
         run: |
           mkdir sdk
@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-packages
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: gh-pages
       - name: Flush existing files
