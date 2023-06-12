@@ -74,7 +74,7 @@ jobs:
           mkdir -p OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
           rsync -av sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/bin/packages/${{ matrix.arch }}/base OpenWrt_${{ matrix.major }}/${{ matrix.arch }}
           tar cf OpenWrt_${{ matrix.major }}-${{ matrix.arch }}.tar OpenWrt_${{ matrix.major }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: OpenWrt_${{ matrix.major }}-${{ matrix.arch }}
           path: OpenWrt_${{ matrix.major }}-${{ matrix.arch }}.tar
