@@ -90,7 +90,7 @@ jobs:
       - name: Flush existing files
         run: rm -r OpenWrt_*
       # Without any parameters, download-artifact grabs everything, which is what we want
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
       - name: Extract artifacts
         run: |
           for tarball in OpenWrt_*-*/*.tar; do
