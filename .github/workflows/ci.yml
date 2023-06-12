@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v3
       - id: get-matrix
         name: Get matrix
-        run: echo "::set-output name=matrix::$(<matrix.json)"
+        run: echo "matrix=$(<matrix.json)" >> $GITHUB_OUTPUT
     outputs:
       matrix: ${{ steps.get-matrix.outputs.matrix }}
 
