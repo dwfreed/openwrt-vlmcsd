@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: mips64_octeonplus
 Installed-Size: 64869
 Filename: vlmcsd_svn1113-2_mips64_octeonplus.ipk
-Size: 65394
-SHA256sum: aeea110da23fa1168dc67f2014beee6e63be2d5f514db391217022404e4f8d69
+Size: 65382
+SHA256sum: 5d0ee86daf4e350d524d6d6a86c3c6de845ee3ca485ec5a60e0ffea9b19079d7
 Description:  vlmcsd is a KMS Emulator in C.
 

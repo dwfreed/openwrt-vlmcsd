@@ -12,6 +12,6 @@ Architecture: aarch64_generic
 Installed-Size: 60154
 Filename: vlmcsd_svn1113-2_aarch64_generic.ipk
 Size: 60675
-SHA256sum: 55c9c56047b6454a91c42e3106dbe11406e307d33a0e8202a94dae57309d8ff0
+SHA256sum: 96b2388a453879d0290794c612f8d8536de31de602580da1012640af0b9c4da0
 Description:  vlmcsd is a KMS Emulator in C.
 

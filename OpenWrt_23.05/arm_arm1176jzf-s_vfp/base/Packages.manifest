@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: arm_arm1176jzf-s_vfp
 Installed-Size: 61136
 Filename: vlmcsd_svn1113-2_arm_arm1176jzf-s_vfp.ipk
-Size: 61760
-SHA256sum: 43cc24439045f35995d94495c2d648dd8bd9fbe39d1fb45be878f57097d3d640
+Size: 61773
+SHA256sum: c7be6df483e87a0019f1623cc70bf6f7fb32f2fc2a0a1e4c04dd0af013008cf2
 Description:  vlmcsd is a KMS Emulator in C.
 
