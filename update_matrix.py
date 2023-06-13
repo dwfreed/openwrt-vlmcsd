@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# run this from within a full, up-to-date, clone of openwrt.git
+# (then copy matrix.json back to this dir)
+# note that running this will checkout various tags and leave you somewhere else than you were
+
 from bs4 import BeautifulSoup # Don't ask...
 import json
 import requests
