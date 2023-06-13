@@ -60,6 +60,6 @@ jobs:
   trigger-rebuild:
     name: Trigger rebuild on changed matrix
     needs: update-matrix
-    if: ${{ needs.update-matrix.outputs.changed == '1' }}
+    if: ${{ needs.update-matrix.outputs.changed == 1 }}
     uses: dwfreed/openwrt-vlmcsd/.github/workflows/ci.yml@main
     secrets: inherit
