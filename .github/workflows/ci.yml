@@ -96,7 +96,7 @@ jobs:
         with:
           ref: gh-pages
       - name: Flush existing files
-        run: rm -r OpenWrt_*
+        run: rm -rf OpenWrt_*
       # Without any parameters, download-artifact grabs everything, which is what we want
       - uses: actions/download-artifact@v3
       - name: Extract artifacts
