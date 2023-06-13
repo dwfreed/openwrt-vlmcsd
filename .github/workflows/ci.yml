@@ -49,6 +49,8 @@ jobs:
       MATRIX_SDK_FILENAME: ${{ matrix.sdk_filename }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref || 'main' }}
       - name: Get the SDK
         run: |
           mkdir sdk
