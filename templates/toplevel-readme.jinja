@@ -1,0 +1,9 @@
+OpenWrt repository for {{ owrt_package }}
+========
+
+Download the [signing key](public.key), add it to your device with `opkg-key add public.key`, and then select the version that matches your device (check `/etc/openwrt_release` or the LuCI status page):
+
+{% for version, version_dir in versions_and_dirs -%}
+ * [OpenWrt {{ version }}]({{ version_dir }}/)
+{% endfor -%}
+ * [Signing key](public.key)

@@ -1,0 +1,12 @@
+OpenWrt {{ version }} {{ arch }} repository for {{ owrt_package }}
+========
+
+Binaries built from this repository on {{ date | date_format }} can be downloaded from https://{{ repo_owner }}.github.io/{{ repo_name }}/.
+
+To install the {{ owrt_package }} package, run
+
+```
+echo "src/gz {{ repo_name }} https://{{ repo_owner }}.github.io/{{ repo_name }}/{{ version_dir }}/{{ arch }}/base" >> /etc/opkg/customfeeds.conf
+opkg update
+opkg install {{ owrt_package }}
+```
