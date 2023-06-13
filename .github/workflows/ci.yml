@@ -6,10 +6,7 @@ on:
       main
     paths-ignore:
       - 'README.md'
-  workflow_call:
-    secrets:
-      USIGN_KEY:
-        required: true
+  workflow_dispatch:
 
 concurrency:
   group: CI
