@@ -6,7 +6,6 @@ on:
       main
     paths-ignore:
       - 'README.md'
-      - 'update_matrix.py'
   workflow_call:
     secrets:
       USIGN_KEY:
@@ -30,6 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        ref: matrix
       - id: get-matrix
         name: Get matrix
         run: echo "matrix=$(<matrix.json)" >> $GITHUB_OUTPUT
