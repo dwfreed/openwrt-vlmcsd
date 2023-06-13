@@ -7,6 +7,10 @@ on:
     paths-ignore:
       - 'README.md'
       - 'update_matrix.py'
+  workflow_call:
+    secrets:
+      USIGN_KEY:
+        required: true
 
 concurrency:
   group: CI
