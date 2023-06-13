@@ -55,8 +55,19 @@ jobs:
           else
             echo "changed=0" >> $GITHUB_OUTPUT
           fi
+      - name: Check output
+        run: |
+          echo "changed=${{ steps.commit.output.changed }}"
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
+  check-output:
+    name: Check output
+    needs: update-matrix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check output
+        run: |
+          echo "changed=${{ needs.update-matrix.outputs.changed }}"
   trigger-rebuild:
     name: Trigger rebuild on changed matrix
     needs: update-matrix
