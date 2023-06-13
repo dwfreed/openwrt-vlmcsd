@@ -55,11 +55,8 @@ jobs:
           else
             echo "changed=0" >> $GITHUB_OUTPUT
           fi
-    outputs:
-      changed: ${{ steps.commit.outputs.changed }}
-  trigger-rebuild:
-    name: Trigger rebuild on changed matrix
-    needs: update-matrix
-    if: ${{ needs.update-matrix.outputs.changed == 1 }}
-    uses: dwfreed/openwrt-vlmcsd/.github/workflows/ci.yml@main
-    secrets: inherit
+      - name: Trigger rebuild if matrix changed
+        if: ${{ steps.commit.outputs.changed == 1 }}
+        run: gh workflow run ci.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
