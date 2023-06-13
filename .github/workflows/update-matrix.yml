@@ -56,7 +56,7 @@ jobs:
             echo "changed=0" >> $GITHUB_OUTPUT
           fi
     outputs:
-      changed: ${{ steps.commit.output.changed }}
+      changed: ${{ steps.commit.outputs.changed }}
   trigger-rebuild:
     name: Trigger rebuild on changed matrix
     needs: update-matrix
