@@ -49,7 +49,7 @@ jobs:
       - name: Set up package dir and signing key
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
-          mkdir package/vlmcsd
+          mkdir package/${{ env.owrt-package }}
           ln -s "${GITHUB_WORKSPACE}"/Makefile package/${{ env.owrt-package }}/
           ln -s "${GITHUB_WORKSPACE}"/files package/${{ env.owrt-package }}/
           echo 'untrusted comment: usign key of ${{ env.usign-key-name }}' > key-build
