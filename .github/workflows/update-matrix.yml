@@ -48,7 +48,7 @@ jobs:
         id: commit
         run: |
           git add matrix.json
-          if git diff-index --quiet HEAD; then
+          if ! git diff-index --quiet HEAD; then
             git commit -m "Commit updated matrix from build ${GITHUB_RUN_NUMBER}"
             git push
             echo "changed=1" >> $GITHUB_OUTPUT
