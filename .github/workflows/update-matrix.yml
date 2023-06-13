@@ -16,7 +16,6 @@ concurrency:
 env:
   git-author-name: Doug Freed
   git-author-email: dwfreed@mtu.edu
-  repo: dwfreed/openwrt-vlmcsd
 
 jobs:
   update-matrix:
@@ -61,5 +60,5 @@ jobs:
     name: Trigger rebuild on changed matrix
     needs: update-matrix
     if: ${{ needs.update-matrix.outputs.changed == '1' }}
-    uses: ${{ env.repo }}/.github/workflows/ci.yml@main
+    uses: dwfreed/openwrt-vlmcsd/.github/workflows/ci.yml@main
     secrets: inherit
