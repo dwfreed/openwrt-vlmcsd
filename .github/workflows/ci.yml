@@ -29,7 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        ref: matrix
+        with:
+          ref: matrix
       - id: get-matrix
         name: Get matrix
         run: echo "matrix=$(<matrix.json)" >> $GITHUB_OUTPUT
