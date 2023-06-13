@@ -10,17 +10,19 @@ import requests
 import sh
 import sh.contrib
 
-class OpenWrtVersionSort:
+class OpenWrtVersion:
     def __init__(self, tag):
         ver, _, rc = tag.partition('-rc')
-        major, _, minor = ver.rpartition('.')
-        self.major = major
+        year, month, minor = ver.split('.')
+        self.year = int(year)
+        self.month = int(month)
         self.minor = int(minor)
         if rc:
             self.rc = int(rc)
         else:
             self.rc = None
         pass
+
     def __lt__(self, other):
         return self.compare(self, other) < 0
     def __gt__(self, other):
@@ -34,16 +36,23 @@ class OpenWrtVersionSort:
     def __ne__(self, other):
         return self.compare(self, other) != 0
 
+    def __str__(self):
+        if self.rc:
+            return f'{self.year}.{self.month:02d}.{self.minor}-rc{self.rc}'
+        else:
+            return f'{self.year}.{self.month:02d}.{self.minor}'
+
+    def major(self):
+        return f'{self.year}.{self.month:02d}'
+
     @staticmethod
     def compare(a, b):
-        if a.major > b.major:
-            return 1
-        elif a.major < b.major:
-            return -1
-        elif a.minor > b.minor:
-            return 1
-        elif a.minor < b.minor:
-            return -1
+        if a.year != b.year:
+            return a.year - b.year
+        elif a.month != b.month:
+            return a.month - b.month
+        elif a.minor != b.minor:
+            return a.minor - b.minor
         elif a.rc is None and b.rc is not None:
             return 1
         elif a.rc is not None and b.rc is None:
@@ -52,58 +61,107 @@ class OpenWrtVersionSort:
             return a.rc - b.rc
 
 
-dump_target_info = sh.Command('scripts/dump-target-info.pl')
+try:
+    dump_target_info = sh.Command('scripts/dump-target-info.pl')
+except:
+    dump_target_info = None
 
 sh.contrib.git.fetch('--tags')
 
 git_tags = sh.contrib.git.tag().split('\n')
-git_tags = [tag[1:] for tag in git_tags if tag.startswith('v')]
-majors = sorted({'.'.join(tag.split('.')[:2]) for tag in git_tags})
-majors = majors[-3:]
-tags = [sorted([tag for tag in git_tags if major in tag], key=OpenWrtVersionSort)[-1] for major in majors]
+versions = [OpenWrtVersion(tag[1:]) for tag in git_tags if tag.startswith('v')]
+majors = sorted({version.major() for version in versions}, reverse=True)
+versions_by_major = {major: sorted([version for version in versions if version.major() == major], reverse=True) for major in majors}
+
+keep_majors = 2
+if versions_by_major[majors[0]][0].rc:
+    keep_majors += 1
+majors = majors[:keep_majors]
 
 matrix = []
-for major, tag in zip(majors, tags):
-    sh.contrib.git.checkout(f'v{tag}')
+major_arches_done = set()
+major_arches_seen = {}
+for major in majors:
+    print(f'Starting major {major}')
+    for version in versions_by_major[major]:
+        if version.rc and not versions_by_major[major][0].rc:
+            break
 
-    for line in dump_target_info.architectures().split('\n'):
-        if not line:
+        print(f' Starting version {version}')
+
+        sh.contrib.git.checkout(f'v{version}')
+
+        if not dump_target_info:
+            try:
+                dump_target_info = sh.Command('scripts/dump-target-info.pl')
+            except:
+                dump_target_info = None
+                print(f'  Version {version} unavailable due to missing target info script')
+                continue
+
+        try:
+            dump_target_info_lines = dump_target_info.architectures().split('\n')
+        except:
+            print(f'  Version {version} unavailable due to missing target info script')
             continue
 
-        arch, _, targets_str = line.partition(' ')
+        for line in dump_target_info_lines:
+            if not line:
+                continue
 
-        for target in targets_str.split(' '):
-            url = f'https://downloads.openwrt.org/releases/{tag}/targets/{target}/'
+            arch, _, targets_str = line.partition(' ')
 
-            response = requests.get(url)
+            if f'{major}-{arch}' in major_arches_done:
+                continue
 
-            soup = BeautifulSoup(response.text, 'html.parser')
+            versions_seen = major_arches_seen.setdefault(f'{major}-{arch}', list())
+            versions_seen.append(str(version))
 
-            sdk = ''
-            for link in soup.find_all('a'):
-                if not link['href']:
-                    continue
+            print(f'  Starting arch {arch}')
 
-                if 'openwrt-sdk' not in link['href']:
-                    continue
+            for target in targets_str.split(' '):
+                print(f'   Trying target {target}: ', end='', flush=True)
 
-                sdk = link['href']
-                break
+                url = f'https://downloads.openwrt.org/releases/{version}/targets/{target}/'
 
-            if sdk:
-                break
+                response = requests.get(url)
 
-        else:
-            print(f'SDK not found for {tag} {arch} {targets_str}!')
-            continue
+                soup = BeautifulSoup(response.text, 'html.parser')
 
-        job = {
-                'major': major,
-                'tag': tag,
-                'arch': arch,
-                'sdk_url': f'{url}/{sdk}',
-                'sdk_filename': sdk,
-        }
-        matrix.append(job)
+                sdk = ''
+                for link in soup.find_all('a'):
+                    if not link['href']:
+                        continue
+
+                    if 'openwrt-sdk' not in link['href']:
+                        continue
+
+                    sdk = link['href']
+                    print('found')
+                    break
+
+                if sdk:
+                    break
+                else:
+                    print('not found')
+
+            else:
+                continue
+
+            job = {
+                    'major': major,
+                    'tag': str(version),
+                    'arch': arch,
+                    'sdk_url': f'{url}/{sdk}',
+                    'sdk_filename': sdk,
+            }
+            matrix.append(job)
+            major_arches_done.add(f'{major}-{arch}')
+
+major_arches_missed = set(major_arches_seen.keys()) - major_arches_done
+if major_arches_missed:
+    print("An SDK was never found for the following major-arch combos, listed with the versions they were seen in: (note that some arches may be source-only; check upstream openwrt to see)")
+    for major_arch in major_arches_missed:
+        print(f'{major_arch}:', *major_arches_seen[major_arch])
 
 json.dump(matrix, open('matrix.json', 'w'))
