@@ -115,12 +115,16 @@ jobs:
         run: |
           source venv/bin/activate
           ./generate.py repo_owner=${{ env.repo-owner }} repo_name=${{ env.repo-name }} owrt_package=${{ env.owrt-package }}
+      - name: Clean up virtualenv
+        run: rm -rf venv
       - name: Configure git
         run: |
-          git config user.name ${{ env.git-author-name }}
+          git config user.name "${{ env.git-author-name }}"
           git config user.email ${{ env.git-author-email }}
       - name: Commit
         run: |
           git add -A
-          git commit -m "Deploy GH Actions build ${GITHUB_RUN_NUMBER} to gh-pages"
-          git push
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Deploy GH Actions build ${GITHUB_RUN_NUMBER} to gh-pages"
+            git push
+          fi
