@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: powerpc_464fp
-Installed-Size: 64859
+Installed-Size: 64860
 Filename: vlmcsd_svn1113-2_powerpc_464fp.ipk
-Size: 65352
-SHA256sum: 6440ba053a4a7b43ad5c6ab637c41908ca32239341dbb0590da06df7fe8f6ad9
+Size: 65404
+SHA256sum: 8427ddb9f64f95cbe52ca72e9315bbc47b35891c0e2f276d0b1601ef6d47d0a7
 Description:  vlmcsd is a KMS Emulator in C.
 
