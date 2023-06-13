@@ -1,7 +1,7 @@
 OpenWrt 21.02 repository for vlmcsd
 ========
 
-Select the architecture that matches your device (use `opkg pring-architecture` to get the architecture):
+Select the architecture that matches your device (use `opkg print-architecture` to get the architecture):
 
 * [aarch64_cortex-a53](aarch64_cortex-a53/)
 * [aarch64_cortex-a72](aarch64_cortex-a72/)
