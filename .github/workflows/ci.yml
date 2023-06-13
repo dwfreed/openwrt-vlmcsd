@@ -8,6 +8,10 @@ on:
       - 'README.md'
       - 'update_matrix.py'
 
+concurrency:
+  group: CI
+  cancel-in-progress: false
+
 env:
   git-author-name: Doug Freed
   git-author-email: dwfreed@mtu.edu
