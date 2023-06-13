@@ -1,0 +1,65 @@
+name: Update Matrix
+
+on:
+  schedule:
+    - cron: '23 1 * * *' # 01:23 daily
+  push:
+    branches:
+      matrix
+    paths-ignore:
+      - 'matrix.json'
+
+concurrency:
+  group: update-matrix
+  cancel-in-progress: false
+
+env:
+  git-author-name: Doug Freed
+  git-author-email: dwfreed@mtu.edu
+  repo: dwfreed/openwrt-vlmcsd
+
+jobs:
+  update-matrix:
+    name: Update Matrix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get the OpenWrt repo
+        uses: actions/checkout@v3
+        with:
+          repository: openwrt/openwrt
+          path: openwrt
+          fetch-depth: 0
+      - name: Set up virtualenv
+        run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip3 install -r requirements.txt
+      - name: Update matrix
+        run: |
+          source venv/bin/activate
+          cd openwrt
+          ../update_matrix.py
+          cp matrix.json ..
+      - name: Configure git
+        run: |
+          git config user.name ${{ env.git-author-name }}
+          git config user.email ${{ env.git-author-email }}
+      - name: Commit
+        id: commit
+        run: |
+          git add matrix.json
+          if git diff-index --quiet HEAD; then
+            git commit -m "Commit updated matrix from build ${GITHUB_RUN_NUMBER}"
+            echo "changed=1" >> $GIThUB_OUTPUT
+          else
+            echo "changed=0" >> $GIThUB_OUTPUT
+          fi
+    outputs:
+      changed: ${{ steps.commit.output.changed }}
+  trigger-rebuild:
+    name: Trigger rebuild on changed matrix
+    needs: update-matrix
+    if: ${{ needs.update-matrix.outputs.changed == '1' }}
+    uses: ${{ env.repo }}/.github/workflows/ci.yml@main
+    secrets: inherit
