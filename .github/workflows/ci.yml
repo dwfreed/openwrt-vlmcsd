@@ -106,8 +106,15 @@ jobs:
             rm ${tarball}
           done
           find -type d -empty -delete
+      - name: Set up virtualenv
+        run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip3 install -r requirements.txt
       - name: Generate READMEs
-        run: env # TODO
+        run: |
+          source venv/bin/activate
+          ./generate.py repo_owner=${{ env.repo-owner }} repo_name=${{ env.repo-name }} owrt_package=${{ env.owrt-package }}
       - name: Configure git
         run: |
           git config user.name ${{ env.git-author-name }}
