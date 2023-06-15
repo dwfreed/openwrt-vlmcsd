@@ -1,8 +1,7 @@
 name: Update Matrix
 
 on:
-  schedule:
-    - cron: '23 1 * * *' # 01:23 daily
+  workflow_call:
   push:
     branches:
       matrix
@@ -23,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: matrix
       - name: Get the OpenWrt repo
         uses: actions/checkout@v3
         with:
