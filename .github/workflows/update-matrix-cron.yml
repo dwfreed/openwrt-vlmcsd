@@ -2,7 +2,7 @@ name: Update Matrix Cron
 
 on:
   schedule:
-    cron: '23 1 * * *' # 01:23 daily
+    - cron: '23 1 * * *' # 01:23 daily
 
 jobs:
   call-update-matrix:
