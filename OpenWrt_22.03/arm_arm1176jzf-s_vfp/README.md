@@ -1,7 +1,7 @@
 OpenWrt 22.03 arm_arm1176jzf-s_vfp repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-06-13 can be downloaded from https://dwfreed.github.io/openwrt-vlmcsd/.
+Binaries built from this repository on 2023-06-15 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

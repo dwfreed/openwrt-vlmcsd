@@ -1,7 +1,7 @@
 OpenWrt 21.02 arm_cortex-a5_vfpv4 repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-06-13 can be downloaded from https://dwfreed.github.io/openwrt-vlmcsd/.
+Binaries built from this repository on 2023-06-15 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 
