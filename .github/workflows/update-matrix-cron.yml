@@ -1,0 +1,9 @@
+name: Update Matrix Cron
+
+on:
+  schedule:
+    cron: '23 1 * * *' # 01:23 daily
+
+jobs:
+  call-update-matrix:
+    uses: dwfreed/openwrt-vlmcsd/.github/workflows/update-matrix.yml@matrix
