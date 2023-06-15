@@ -9,9 +9,9 @@ Section: net
 SourceDateEpoch: 1685785320
 Maintainer: HotBird64
 Architecture: powerpc_8548
-Installed-Size: 66821
+Installed-Size: 66820
 Filename: vlmcsd_svn1113-2_powerpc_8548.ipk
-Size: 67290
-SHA256sum: a20841417a147e97f79b3a78e4d9428b4edc1fc8bc75e08ee974744a9fc5d6e4
+Size: 67277
+SHA256sum: 907737f00740bad65db63c3d34d5a578a9a2df2eb5290a5e64cc360d053280ef
 Description:  vlmcsd is a KMS Emulator in C.
 
