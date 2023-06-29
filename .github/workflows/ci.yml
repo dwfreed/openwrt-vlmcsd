@@ -62,11 +62,11 @@ jobs:
           ln -s "${GITHUB_WORKSPACE}"/files package/${{ env.owrt-package }}/
           echo 'untrusted comment: usign key of ${{ env.usign-key-name }}' > key-build
           echo '${{ secrets.USIGN_KEY }}' >> key-build
-      - name: Add SDK bins to path
-        run: |
-          cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
-          echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/host/bin >> "$GITHUB_PATH"
-          echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/toolchain-*/bin >> "$GITHUB_PATH"
+      #- name: Add SDK bins to path
+      #  run: |
+      #    cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
+      #    echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/host/bin >> "$GITHUB_PATH"
+      #    echo "${GITHUB_WORKSPACE}"/sdk/"${MATRIX_SDK_FILENAME%.tar.xz}"/staging_dir/toolchain-*/bin >> "$GITHUB_PATH"
       - name: Update packages feed
         run: |
           cd "sdk/${MATRIX_SDK_FILENAME%.tar.xz}"
