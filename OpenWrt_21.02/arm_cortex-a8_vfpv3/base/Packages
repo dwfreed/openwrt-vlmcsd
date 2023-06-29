@@ -7,6 +7,6 @@ Architecture: arm_cortex-a8_vfpv3
 Installed-Size: 60588
 Filename: vlmcsd_svn1113-2_arm_cortex-a8_vfpv3.ipk
 Size: 61251
-SHA256sum: 5f9cd694048c42c8c65bd94610e53cf63b9c5bbe077b9bd2df3bc00b51487793
+SHA256sum: 61fd2d053434c555e92b2b59dfbcd1519e8606d5c344399f517221e19e28654d
 Description:  vlmcsd is a KMS Emulator in C.
 

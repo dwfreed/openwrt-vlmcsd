@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: mips_4kec
 Installed-Size: 57359
 Filename: vlmcsd_svn1113-2_mips_4kec.ipk
-Size: 57786
-SHA256sum: 36667076fcc184df162d3c163fb41e585e0fc9fde7080b08a7779e2f0ae18ae3
+Size: 57897
+SHA256sum: 1422cdb4ddb0253497a03d78056e828b3f91551092d7977cac2c4d22d1cb5512
 Description:  vlmcsd is a KMS Emulator in C.
 
