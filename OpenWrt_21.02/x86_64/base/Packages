@@ -4,10 +4,10 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: x86_64
-Installed-Size: 57851
+Installed-Size: 57850
 Filename: vlmcsd_svn1113-2_x86_64.ipk
-Size: 58565
-SHA256sum: 9f35b274d9298473f7d106ed5f4e79f4aebddc3b6797a9987d6eafd0e5562011
+Size: 58568
+SHA256sum: edbb1c9a74d4680f44288c2af28139424404e703c5fc861198112bdccd874702
 Description:  vlmcsd is a KMS Emulator in C.
 
 

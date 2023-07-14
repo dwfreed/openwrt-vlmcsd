@@ -6,7 +6,7 @@ Section: net
 Architecture: arm_cortex-a7
 Installed-Size: 60495
 Filename: vlmcsd_svn1113-2_arm_cortex-a7.ipk
-Size: 61178
-SHA256sum: ccd534a76d887b669521a4390ff91a88e7aed772fd0d0e57c5f9d3c2688392db
+Size: 61117
+SHA256sum: 6f9ad5fca28eaef1a9310a051b47bf0c202fdace2e9e68e73cb2ffb07faa9314
 Description:  vlmcsd is a KMS Emulator in C.
 
