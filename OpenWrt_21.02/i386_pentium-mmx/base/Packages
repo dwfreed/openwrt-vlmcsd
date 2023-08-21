@@ -6,7 +6,7 @@ Section: net
 Architecture: i386_pentium-mmx
 Installed-Size: 55824
 Filename: vlmcsd_svn1113-2_i386_pentium-mmx.ipk
-Size: 56529
-SHA256sum: e7b2ef45dd78fc8b678125f0bd0cb587caf862a80bd386f915629d46c704fe66
+Size: 56508
+SHA256sum: c2162769c428bd34c99d235f476d84bfe95b95cfeb5d38369954be7c24df1bf2
 Description:  vlmcsd is a KMS Emulator in C.
 

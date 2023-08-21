@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: arm_fa526
-Installed-Size: 60952
+Installed-Size: 60949
 Filename: vlmcsd_svn1113-2_arm_fa526.ipk
-Size: 61545
-SHA256sum: b12ae8d07f90952537ed7e530253a3fffb53534e6b81509987e1dce7b9d5033f
+Size: 61493
+SHA256sum: 280c150f496c981691b259fd5437081798e6c907579d7121f84887879097a4b7
 Description:  vlmcsd is a KMS Emulator in C.
 

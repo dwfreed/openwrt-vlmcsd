@@ -1,7 +1,7 @@
 OpenWrt 23.05 arm_cortex-a9_neon repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-07-14 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-08-21 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 
