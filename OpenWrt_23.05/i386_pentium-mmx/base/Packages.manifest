@@ -6,12 +6,12 @@ SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1687778439
+SourceDateEpoch: 1692453666
 Maintainer: HotBird64
 Architecture: i386_pentium-mmx
-Installed-Size: 55629
+Installed-Size: 55630
 Filename: vlmcsd_svn1113-2_i386_pentium-mmx.ipk
-Size: 56097
-SHA256sum: 09e5041787456cb97ced90ed2814b8479bc596a87208b42a662fbfffdf0cbe2b
+Size: 56338
+SHA256sum: 1197e90e62f6a02a2e2dd2f35cfd3ec9b4b5b5fa43ca5fa17f850d4dbd111a49
 Description:  vlmcsd is a KMS Emulator in C.
 

@@ -1,7 +1,7 @@
 OpenWrt 23.05 arm_mpcore repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-08-21 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-08-22 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

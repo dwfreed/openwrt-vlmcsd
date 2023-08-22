@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: x86_64
 Installed-Size: 58063
 Filename: vlmcsd_svn1113-2_x86_64.ipk
-Size: 58767
-SHA256sum: 9b0018d4ecbbd4cd5c0d1350c8e5753c5ed1b9f2ed5e3494bdd300eee5a204af
+Size: 58850
+SHA256sum: 8cf309b2bf806fd2a6ed9887ff4b8f869b329d908a7bc941991a356c6ce80e07
 Description:  vlmcsd is a KMS Emulator in C.
 

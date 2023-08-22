@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: mipsel_24kc
-Installed-Size: 56477
+Installed-Size: 56476
 Filename: vlmcsd_svn1113-2_mipsel_24kc.ipk
-Size: 57185
-SHA256sum: 72f599333cab92a0f84fabde1d7bdae4fa857ff961b1b6b6829da52455a40e95
+Size: 57183
+SHA256sum: 314fd81c896290a5c68e6f7028fac5c40c971d63a83a36b65947a0a552ce741c
 Description:  vlmcsd is a KMS Emulator in C.
 
