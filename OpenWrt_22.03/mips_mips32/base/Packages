@@ -6,7 +6,7 @@ Section: net
 Architecture: mips_mips32
 Installed-Size: 62649
 Filename: vlmcsd_svn1113-2_mips_mips32.ipk
-Size: 63094
-SHA256sum: c1f6021805cc8951e648ca7ae275bf78926cbfca378e3daf106d1408487f208f
+Size: 63085
+SHA256sum: 4a62da03d92f1f640ccc22c169c8eb6feb8d99ac4506736fe5fea94df217dc11
 Description:  vlmcsd is a KMS Emulator in C.
 
