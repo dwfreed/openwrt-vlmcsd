@@ -1,7 +1,7 @@
 OpenWrt 22.03 powerpc_464fp repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-08-23 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-09-30 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 
