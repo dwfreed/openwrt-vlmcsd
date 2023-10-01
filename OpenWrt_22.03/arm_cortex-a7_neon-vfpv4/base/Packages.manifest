@@ -9,9 +9,9 @@ Section: net
 SourceDateEpoch: 1682627295
 Maintainer: HotBird64
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 60458
+Installed-Size: 60457
 Filename: vlmcsd_svn1113-2_arm_cortex-a7_neon-vfpv4.ipk
-Size: 61075
-SHA256sum: 2017cc73e34ee950a12ab04502674b03ec234bfefffefc69fbac353088d593b4
+Size: 61104
+SHA256sum: 93daa5745eec49a98e8ab2eeee9bed6b7e0bf44be7ea56e3c07417920c5eacce
 Description:  vlmcsd is a KMS Emulator in C.
 

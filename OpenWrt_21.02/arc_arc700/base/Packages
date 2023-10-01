@@ -7,6 +7,6 @@ Architecture: arc_arc700
 Installed-Size: 58860
 Filename: vlmcsd_svn1113-2_arc_arc700.ipk
 Size: 59413
-SHA256sum: b2c75c8cf9950ade99b7f8a9c1943a86bbbdd8c8999386c9145d6abd28fe6ba4
+SHA256sum: af38038fa8f3bbf8ae724851bfdbfbf0aeacfb6dcc0cad4b17eb92a4708b6aef
 Description:  vlmcsd is a KMS Emulator in C.
 
