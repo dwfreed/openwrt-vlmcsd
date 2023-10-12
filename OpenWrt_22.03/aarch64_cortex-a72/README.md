@@ -1,7 +1,7 @@
 OpenWrt 22.03 aarch64_cortex-a72 repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-10-01 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-10-12 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

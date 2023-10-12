@@ -5,5 +5,4 @@ Download the [signing key](public.key), add it to your device with `opkg-key add
 
 * [OpenWrt 23.05](OpenWrt_23.05/)
 * [OpenWrt 22.03](OpenWrt_22.03/)
-* [OpenWrt 21.02](OpenWrt_21.02/)
 * [Signing key](public.key)
