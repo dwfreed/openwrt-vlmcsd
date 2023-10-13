@@ -6,7 +6,7 @@ Section: net
 Architecture: arm_arm926ej-s
 Installed-Size: 60843
 Filename: vlmcsd_svn1113-2_arm_arm926ej-s.ipk
-Size: 61629
-SHA256sum: 39f707244d71f871f251b7d3fef928507e8a3bd78f0b77f0deb1fecdabdff980
+Size: 61592
+SHA256sum: 847d8bf31234e20fddf1386cf3d67344626b0c2d133cabe15f8b8a7270489dde
 Description:  vlmcsd is a KMS Emulator in C.
 
