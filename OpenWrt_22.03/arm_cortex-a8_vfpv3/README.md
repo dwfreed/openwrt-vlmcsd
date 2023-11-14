@@ -1,7 +1,7 @@
 OpenWrt 22.03 arm_cortex-a8_vfpv3 repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-10-13 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-11-14 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

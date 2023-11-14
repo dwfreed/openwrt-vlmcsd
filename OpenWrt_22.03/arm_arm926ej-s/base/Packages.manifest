@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: arm_arm926ej-s
 Installed-Size: 60843
 Filename: vlmcsd_svn1113-2_arm_arm926ej-s.ipk
-Size: 61592
-SHA256sum: 847d8bf31234e20fddf1386cf3d67344626b0c2d133cabe15f8b8a7270489dde
+Size: 61585
+SHA256sum: 1bfc0f286116ad85d39041d7a2c8f317b263abbda8bee9337c0c363264c92e35
 Description:  vlmcsd is a KMS Emulator in C.
 

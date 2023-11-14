@@ -7,6 +7,6 @@ Architecture: powerpc_464fp
 Installed-Size: 64859
 Filename: vlmcsd_svn1113-2_powerpc_464fp.ipk
 Size: 65402
-SHA256sum: 5d515c3d03813749deb2b526446bb7f2ecfc5dcf7ddb3a3fc594a31f568acd67
+SHA256sum: c3032213a0af08d4c43255d86f60d313abb1be0ba3379fa2760bc6f6e107d8ca
 Description:  vlmcsd is a KMS Emulator in C.
 

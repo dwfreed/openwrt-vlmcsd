@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: aarch64_cortex-a53
-Installed-Size: 60167
+Installed-Size: 60162
 Filename: vlmcsd_svn1113-2_aarch64_cortex-a53.ipk
-Size: 60783
-SHA256sum: e288c6ffabf3764b0f22c58c9a450dc4d08fc3795e89f2247de37c37931c6da2
+Size: 60754
+SHA256sum: 65906f065594fdbef2b596777c797899d616e436ab123787d0fcc35471d8a494
 Description:  vlmcsd is a KMS Emulator in C.
 

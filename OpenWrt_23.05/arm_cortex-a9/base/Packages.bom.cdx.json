@@ -1,0 +1,1 @@
+{"serialNumber":"urn:uuid:48d52d5b-08b9-4721-88b8-d42f0b1f23a5","components":[{"type":"application","name":"vlmcsd","version":"svn1113","licenses":[{"license":{"name":"MIT"}}]}],"metadata":{"timestamp":"2023-11-14T02:09:03"},"version":1,"bomFormat":"CycloneDX","specVersion":"1.4"}
