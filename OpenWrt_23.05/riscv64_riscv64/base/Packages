@@ -6,7 +6,7 @@ Section: net
 Architecture: riscv64_riscv64
 Installed-Size: 61191
 Filename: vlmcsd_svn1113-2_riscv64_riscv64.ipk
-Size: 61775
-SHA256sum: beab99c3521051e94f26a7b1793ea86908e52ab8baac330eb9cc028eaeebafa9
+Size: 61772
+SHA256sum: b89d247f830e567d0aba1044ead42a4706a312605411560d4d8ef9b8c028ff05
 Description:  vlmcsd is a KMS Emulator in C.
 
