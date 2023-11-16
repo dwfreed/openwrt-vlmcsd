@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: arm_fa526
 Installed-Size: 60940
 Filename: vlmcsd_svn1113-2_arm_fa526.ipk
-Size: 61510
-SHA256sum: 409b060859c55627e487ccad10237de023ca1b03b69b5a42189d8f165503a464
+Size: 61538
+SHA256sum: 6a43b236e93add68ebab28990ecf925839bef3b91d80990614063ae6ea4ee5bd
 Description:  vlmcsd is a KMS Emulator in C.
 

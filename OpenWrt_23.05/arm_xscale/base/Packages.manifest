@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: arm_xscale
 Installed-Size: 60971
 Filename: vlmcsd_svn1113-2_arm_xscale.ipk
-Size: 61644
-SHA256sum: f1ff91b0b69dc3a8bb758bfc84b10ed6526b3fb469a003357e26de694665f1e2
+Size: 61613
+SHA256sum: 2a7ab3d49a773826d0373cb38486ba0a197a405e7219a6e72f02fd5434b16b0b
 Description:  vlmcsd is a KMS Emulator in C.
 

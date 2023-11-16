@@ -1,7 +1,7 @@
 OpenWrt 22.03 aarch64_generic repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-11-15 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-11-16 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 
