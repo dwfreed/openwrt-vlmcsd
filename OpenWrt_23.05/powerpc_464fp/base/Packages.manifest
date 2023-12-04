@@ -11,7 +11,7 @@ Maintainer: HotBird64
 Architecture: powerpc_464fp
 Installed-Size: 64986
 Filename: vlmcsd_svn1113-2_powerpc_464fp.ipk
-Size: 65464
-SHA256sum: 17b5245083e4d213c8eb6044801ef6256872dac714b2b8379793c558d1074869
+Size: 65439
+SHA256sum: 435876f00897ca79efb7ac0612e02b2e2c4032b179f1f6f2cd1b34f834b19bce
 Description:  vlmcsd is a KMS Emulator in C.
 
