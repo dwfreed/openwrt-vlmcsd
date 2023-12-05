@@ -1,7 +1,7 @@
 OpenWrt 23.05 powerpc_8548 repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-12-04 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-12-05 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

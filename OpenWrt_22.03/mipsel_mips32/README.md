@@ -1,7 +1,7 @@
 OpenWrt 22.03 mipsel_mips32 repository for vlmcsd
 ========
 
-Binaries built from this repository on 2023-12-04 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2023-12-05 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 
