@@ -1,7 +1,7 @@
 OpenWrt 23.05 mipsel_24kc repository for vlmcsd
 ========
 
-Binaries built from this repository on 2024-03-23 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
+Binaries built from this repository on 2024-05-03 can be downloaded from <https://dwfreed.github.io/openwrt-vlmcsd/>.
 
 To install the vlmcsd package, run
 

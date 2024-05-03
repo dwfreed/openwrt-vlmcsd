@@ -4,9 +4,9 @@ Depends: libc, librt, libpthread, libpthread
 License: MIT
 Section: net
 Architecture: arc_archs
-Installed-Size: 56754
+Installed-Size: 56755
 Filename: vlmcsd_svn1113-2_arc_archs.ipk
-Size: 57435
-SHA256sum: c7ecd3cfe33046a634b4ee7a2fd4f9bc6ad9b68c12703926422f215466236742
+Size: 57374
+SHA256sum: 1144c14790ee562cd2af449949f7e88f64dc3bd5c5e05837387a6d5f13d3a5d3
 Description:  vlmcsd is a KMS Emulator in C.
 
