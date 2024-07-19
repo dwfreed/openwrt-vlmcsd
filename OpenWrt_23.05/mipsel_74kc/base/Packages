@@ -6,7 +6,7 @@ Section: net
 Architecture: mipsel_74kc
 Installed-Size: 56530
 Filename: vlmcsd_svn1113-2_mipsel_74kc.ipk
-Size: 57199
-SHA256sum: b5fa8af38bd20d2a5908f0608cebdc2482ce0f90c145d90fdf35d98bba348fa8
+Size: 57291
+SHA256sum: cccf0c4dbb36beac81d1de812c8dad1cc123fa45d44df597e764a7a1739e4be2
 Description:  vlmcsd is a KMS Emulator in C.
 

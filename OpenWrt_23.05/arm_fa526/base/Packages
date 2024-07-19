@@ -6,7 +6,7 @@ Section: net
 Architecture: arm_fa526
 Installed-Size: 60939
 Filename: vlmcsd_svn1113-2_arm_fa526.ipk
-Size: 61509
-SHA256sum: 1433e8cef9a7e76f8ef19ac71a7609ee30db4544aa1e72e699770ec7026636a3
+Size: 61494
+SHA256sum: 8302e17f536d6b5fd4bc1e71285d15749776423e3b909e71d1497e83979765cb
 Description:  vlmcsd is a KMS Emulator in C.
 
