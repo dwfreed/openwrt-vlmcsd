@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 60727
+Installed-Size: 60728
 Filename: vlmcsd_svn1113-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 61445
-SHA256sum: 1ec4d5df2f83e8516902e707f7cbb71f6a95b0f5d0197ed53e8fc1be608f5b06
+Size: 61441
+SHA256sum: ca64a80a36c468e6a4c4cc3e1049a07c3bdf04f157d8b69ef8108bba4c771e30
 Description:  vlmcsd is a KMS Emulator in C.
 
