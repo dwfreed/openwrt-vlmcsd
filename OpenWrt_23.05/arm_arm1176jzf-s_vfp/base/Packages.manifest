@@ -1,17 +1,17 @@
 Package: vlmcsd
 Version: svn1113-2
 Depends: libc, libpthread
-Source: package/vlmcsd
+Source: feeds/base/vlmcsd
 SourceName: vlmcsd
 License: MIT
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1721081658
+SourceDateEpoch: 1727094886
 Maintainer: HotBird64
 Architecture: arm_arm1176jzf-s_vfp
-Installed-Size: 61129
+Installed-Size: 61123
 Filename: vlmcsd_svn1113-2_arm_arm1176jzf-s_vfp.ipk
-Size: 61842
-SHA256sum: fe428c7c8a25f5ebf594f09577e06d0c445ca63a4af8fbd23e84e46e50a1ad18
+Size: 61830
+SHA256sum: b8a3f96ac54b98f493ecb44ebccd40104f5ba268578f8e9545ab03e5cdaa13ea
 Description:  vlmcsd is a KMS Emulator in C.
 
