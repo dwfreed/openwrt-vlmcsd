@@ -4,9 +4,9 @@ Depends: libc, libpthread
 License: MIT
 Section: net
 Architecture: arm_mpcore
-Installed-Size: 61035
+Installed-Size: 61033
 Filename: vlmcsd_svn1113-2_arm_mpcore.ipk
-Size: 61789
-SHA256sum: fa0fbdecd853696c675ccda60ce182207671a1711442ccd1c4de9c01b42f7f4c
+Size: 61752
+SHA256sum: 0f1e71e2a74c96699d08bf6bf3857c69a03287e4391dc0388afa7a2071978fd4
 Description:  vlmcsd is a KMS Emulator in C.
 

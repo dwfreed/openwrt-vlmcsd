@@ -1,0 +1,13 @@
+Package: vlmcsd
+Version: svn1113-r2
+Depends: libc, libpthread
+License: MIT
+Section: net
+URL: http://forums.mydigitallife.info/threads/50234
+Architecture: powerpc_8548
+Installed-Size: 143360
+Filename: vlmcsd_svn1113-r2_powerpc_8548.ipk
+Size: 67017
+SHA256sum: 64b186cafcb668bbb7546fbfe116ee7e580baccf31309a037f42bbf16d6ccde9
+Description:  vlmcsd is a KMS Emulator in C.
+
